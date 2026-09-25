@@ -122,19 +122,6 @@ def _instagram_caption(
     Generate an Instagram-ready caption.
     """
 
-    if status == "scheduled":
-        opening = "⚽ MATCHDAY"
-    elif status == "postponed":
-        opening = "⚠️ MATCH POSTPONED"
-    elif status == "cancelled":
-        opening = "❌ MATCH CANCELLED"
-    elif status == "live":
-        opening = "🔴 LIVE"
-    elif status == "finished":
-        opening = "🏁 FULL TIME"
-    else:
-        opening = "⚽ FOOTBALL"
-
     try:
         formatted_date = datetime.strptime(
             match_date,
@@ -153,8 +140,6 @@ def _instagram_caption(
     hashtags = [tag for tag in hashtags if tag]
 
     return (
-        f"{opening}\n\n"
-        f"{competition}\n"
         f"{home_team} vs {away_team}\n\n"
         f"📅 {match_day}, {formatted_date}\n"
         f"⏰ {kickoff_ist} IST\n\n"
