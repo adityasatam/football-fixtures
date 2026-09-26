@@ -94,5 +94,10 @@ jobs:
             echo "No fixture or prompt changes detected."
           else
             git commit -m "Update football fixtures and Instagram prompts"
-            git push
+
+            # Sync with the latest remote main branch
+            # before pushing to avoid non-fast-forward errors.
+            git pull --rebase origin main
+
+            git push origin main
           fi
