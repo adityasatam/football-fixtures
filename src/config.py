@@ -47,6 +47,21 @@ REQUEST_TIMEOUT_SECONDS = 30
 
 MAX_RETRIES = 3
 
+# ---------------------------------------------------------
+# Future fixture freshness audit
+# ---------------------------------------------------------
+
+# The regular season-level sync runs on every workflow execution.
+# The date-level freshness audit runs once per day.
+#
+# 12 days is deliberately conservative so the repository remains
+# comfortably below the OpenFoot Starter monthly request quota.
+FUTURE_AUDIT_DAYS = 12
+
+# The 05:30 IST GitHub Actions run performs the daily freshness audit.
+# The other scheduled runs only perform the normal season sync.
+FUTURE_AUDIT_HOUR_IST = 5
+
 
 CSV_COLUMNS = [
     "fixture_id",
