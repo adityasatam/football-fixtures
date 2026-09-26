@@ -10,12 +10,20 @@ DATA_FILE = DATA_DIR / "football_fixtures_2026_27.csv"
 INSTAGRAM_DATA_FILE = DATA_DIR / "instagram_fixtures.csv"
 
 
+# ---------------------------------------------------------
+# OpenFoot API
+# ---------------------------------------------------------
+
 API_BASE_URL = "https://openfootapi.com/v1"
 
 SEASON = "2026/27"
 
 TIMEZONE = "Asia/Kolkata"
 
+
+# ---------------------------------------------------------
+# Competitions
+# ---------------------------------------------------------
 
 COMPETITIONS = {
     "Premier League": "comp_premier_league_eng",
@@ -43,25 +51,39 @@ COMPETITION_SHORT_NAMES = {
 }
 
 
+# ---------------------------------------------------------
+# HTTP configuration
+# ---------------------------------------------------------
+
 REQUEST_TIMEOUT_SECONDS = 30
 
 MAX_RETRIES = 3
+
 
 # ---------------------------------------------------------
 # Future fixture freshness audit
 # ---------------------------------------------------------
 
-# The regular season-level sync runs on every workflow execution.
-# The date-level freshness audit runs once per day.
+# The normal workflow runs four times per day.
 #
-# 12 days is deliberately conservative so the repository remains
-# comfortably below the OpenFoot Starter monthly request quota.
-FUTURE_AUDIT_DAYS = 12
+# The date-level freshness audit runs automatically once per day
+# on the 05:30 IST scheduled execution.
+#
+# 14 days means that every fixture in approximately the next
+# two weeks is independently checked from OpenFoot's date endpoint.
+#
+# This is intentionally larger than the previous 12-day window so
+# fixtures around weekends / international breaks are not missed.
+FUTURE_AUDIT_DAYS = 14
 
-# The 05:30 IST GitHub Actions run performs the daily freshness audit.
-# The other scheduled runs only perform the normal season sync.
-FUTURE_AUDIT_HOUR_IST = 5
+# The first scheduled workflow is:
+# 00:00 UTC = 05:30 IST
+FUTURE_AUDIT_HOUR_UTC = 0
 
+
+# ---------------------------------------------------------
+# CSV columns
+# ---------------------------------------------------------
 
 CSV_COLUMNS = [
     "fixture_id",
@@ -92,6 +114,10 @@ CSV_COLUMNS = [
     "last_updated",
 ]
 
+
+# ---------------------------------------------------------
+# Instagram CSV columns
+# ---------------------------------------------------------
 
 INSTAGRAM_COLUMNS = [
     "fixture_id",
