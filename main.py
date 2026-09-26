@@ -95,17 +95,11 @@ def format_match_date(date_string):
 
 def normalize_instagram_caption(caption):
     """
-    Convert the Instagram caption into one physical line.
-
-    Newlines, tabs and repeated whitespace are replaced
-    with a single space.
+    Preserve Instagram caption line breaks while
+    removing unnecessary spaces at the beginning/end.
     """
 
-    return re.sub(
-        r"\s+",
-        " ",
-        caption
-    ).strip()
+    return caption.strip()
 
 
 # ============================================================
