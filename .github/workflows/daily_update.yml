@@ -15,6 +15,12 @@ on:
     - cron: "0 18 * * *"
 
   workflow_dispatch:
+    inputs:
+      future_audit_days:
+        description: "Number of future days to freshness-audit"
+        required: false
+        default: "12"
+        type: string
 
 permissions:
   contents: write
@@ -65,6 +71,7 @@ jobs:
       - name: Update football fixtures
         env:
           OPENFOOT_API_KEY: ${{ secrets.OPENFOOT_API_KEY }}
+          FUTURE_AUDIT_DAYS: ${{ inputs.future_audit_days || '12' }}
         run: |
           python -m src.main
 
