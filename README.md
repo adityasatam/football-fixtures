@@ -117,4 +117,8 @@ At one run per day, that is roughly 270 requests/month, comfortably below the cu
 
 OpenFoot's documentation says `kickoffAt` is returned as an ISO-8601 UTC timestamp and supports filtering by stable competition ID and season. The coverage catalog currently lists all 9 requested competitions for 2026/27.
 
-Coverage and upstream source availability can change, so the script intentionally fails loudly instead of silently writing an incomplete fixture file.
+Coverage and upstream source availability can change. The updater
+therefore combines a full season fetch with a daily upcoming-fixture
+freshness audit and validates API response consistency before modifying
+the CSV files. Existing fixture records are preserved and updated by
+stable fixture ID.
