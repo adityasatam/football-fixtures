@@ -2,9 +2,17 @@ name: Daily Football Fixture Update
 
 on:
   schedule:
-    # 05:30 AM IST every day
-    # 00:00 UTC = 05:30 IST
+    # 05:30 AM IST
     - cron: "0 0 * * *"
+
+    # 11:30 AM IST
+    - cron: "0 6 * * *"
+
+    # 05:30 PM IST
+    - cron: "0 12 * * *"
+
+    # 11:30 PM IST
+    - cron: "0 18 * * *"
 
   workflow_dispatch:
 
@@ -61,20 +69,30 @@ jobs:
           python -m src.main
 
       # -------------------------------------------------------
-      # Commit updated CSV files
+      # Generate Instagram prompts
       # -------------------------------------------------------
 
-      - name: Commit updated CSV files
+      - name: Generate Instagram prompts
+        run: |
+          python main.py
+
+      # -------------------------------------------------------
+      # Commit updated data and prompts
+      # -------------------------------------------------------
+
+      - name: Commit updated data and prompts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/football_fixtures_2026_27.csv
           git add data/instagram_fixtures.csv
+          git add prompt_ref.txt
+          git add prompts/
 
           if git diff --cached --quiet; then
-            echo "No fixture changes detected."
+            echo "No fixture or prompt changes detected."
           else
-            git commit -m "Update football fixtures"
+            git commit -m "Update football fixtures and Instagram prompts"
             git push
           fi
