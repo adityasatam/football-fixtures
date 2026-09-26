@@ -17,19 +17,29 @@ on:
   workflow_dispatch:
     inputs:
       future_audit_days:
-        description: "Number of future days to freshness-audit"
+        description: "Number of future UTC dates to audit"
         required: false
-        default: "12"
+        default: "30"
         type: string
+
+      force_future_audit:
+        description: "Run future fixture freshness audit"
+        required: false
+        default: true
+        type: boolean
+
 
 permissions:
   contents: write
+
 
 concurrency:
   group: football-fixture-update
   cancel-in-progress: false
 
+
 jobs:
+
   update-fixtures:
 
     runs-on: ubuntu-24.04
@@ -45,6 +55,7 @@ jobs:
         with:
           fetch-depth: 0
 
+
       # -------------------------------------------------------
       # Setup Python
       # -------------------------------------------------------
@@ -55,6 +66,7 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
+
       # -------------------------------------------------------
       # Install dependencies
       # -------------------------------------------------------
@@ -64,16 +76,33 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+
       # -------------------------------------------------------
-      # Run OpenFoot fixture sync
+      # Update football fixtures
       # -------------------------------------------------------
 
       - name: Update football fixtures
         env:
           OPENFOOT_API_KEY: ${{ secrets.OPENFOOT_API_KEY }}
-          FUTURE_AUDIT_DAYS: ${{ inputs.future_audit_days || '12' }}
+
+          # Manual run:
+          # use the selected input.
+          #
+          # Scheduled run:
+          # use 14 days.
+          FUTURE_AUDIT_DAYS: ${{ inputs.future_audit_days || '14' }}
+
+          # Manual run:
+          # force the future audit.
+          #
+          # Scheduled run:
+          # false, because main.py automatically enables the
+          # audit only during the 00:00 UTC scheduled execution.
+          FORCE_FUTURE_AUDIT: ${{ inputs.force_future_audit || 'false' }}
+
         run: |
           python -m src.main
+
 
       # -------------------------------------------------------
       # Generate Instagram prompts
@@ -83,28 +112,38 @@ jobs:
         run: |
           python main.py
 
+
       # -------------------------------------------------------
       # Commit updated data and prompts
       # -------------------------------------------------------
 
       - name: Commit updated data and prompts
         run: |
+
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/football_fixtures_2026_27.csv
+
           git add data/instagram_fixtures.csv
+
           git add prompt_ref.txt
+
           git add prompts/
 
           if git diff --cached --quiet; then
-            echo "No fixture or prompt changes detected."
-          else
-            git commit -m "Update football fixtures and Instagram prompts"
 
-            # Sync with the latest remote main branch
-            # before pushing to avoid non-fast-forward errors.
+            echo "No fixture or prompt changes detected."
+
+          else
+
+            git commit \
+              -m "Update football fixtures and Instagram prompts"
+
             git pull --rebase origin main
 
             git push origin main
+
           fi
