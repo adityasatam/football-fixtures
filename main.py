@@ -19,7 +19,7 @@ CSV_URL = (
 )
 
 TIMEZONE = "Asia/Kolkata"
-LOOKBACK_DAYS = 1
+LOOKBACK_DAYS = 3
 
 # Resolve all files relative to main.py
 BASE_DIR = Path(__file__).resolve().parent
