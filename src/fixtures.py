@@ -1,4 +1,3 @@
-```python
 def _build_instagram_rows(
     master_rows: list[dict],
 ) -> list[dict]:
@@ -265,4 +264,3 @@ def _build_instagram_rows(
     )
 
     return instagram_rows
-```
