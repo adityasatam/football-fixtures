@@ -30,7 +30,7 @@ COMPETITIONS = {
     "La Liga": "comp_laliga_es",
     "Serie A": "comp_serie_a_it",
     "Bundesliga": "comp_bundesliga_de",
-    "Ligue 1": "comp_ligue_1_fr",
+    # "Ligue 1": "comp_ligue_1_fr",
     "Champions League": "comp_uefa_champions_league",
     "Europa League": "comp_uefa_europa_league",
     "Conference League": "comp_uefa_conference_league",
