@@ -43,7 +43,7 @@ COMPETITION_SHORT_NAMES = {
     "La Liga": "LaLiga",
     "Serie A": "Serie A",
     "Bundesliga": "Bundesliga",
-    "Ligue 1": "Ligue 1",
+    # "Ligue 1": "Ligue 1",
     "Champions League": "UCL",
     "Europa League": "UEL",
     "Conference League": "UECL",
