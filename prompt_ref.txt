@@ -218,3 +218,4 @@ Ligue_1_Lille_vs_Brest_18_Oct_2026.txt
 Ligue_1_Troyes_vs_Lens_18_Oct_2026.txt
 Serie_A_Roma_vs_Genoa_18_Oct_2026.txt
 La_Liga_Valencia_vs_Athletic_Club_18_Oct_2026.txt
+Serie_A_Udinese_vs_Lecce_18_Oct_2026.txt
