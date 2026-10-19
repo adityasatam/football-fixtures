@@ -237,3 +237,4 @@ La_Liga_Mlaga_vs_Real_Sociedad_18_Oct_2026.txt
 Ligue_1_Lyon_vs_Nice_19_Oct_2026.txt
 Serie_A_Juventus_vs_Lazio_19_Oct_2026.txt
 La_Liga_Real_Madrid_vs_Sevilla_19_Oct_2026.txt
+Serie_A_Monza_vs_Cagliari_19_Oct_2026.txt
