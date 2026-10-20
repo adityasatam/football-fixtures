@@ -1,26 +1,28 @@
 # MASTER PROMPT — VERIFIED FOOTBALL MATCH GRAPHIC SYSTEM
 
-## VERIFIED DATA → APPROVAL → RENDER DATA LOCK → APPROVAL → LOCKED IMAGE
+## VERIFIED DATA → SINGLE APPROVAL → LOCKED RENDER → CAPTION
 
-Create a professional football match-result Instagram post in 1080 × 1350 px, 4:5 vertical format.
+Create a professional football match-result Instagram graphic in **1080 × 1350 px, 4:5 portrait format**.
 
-Use the supplied image description/design direction as the visual reference when provided.
+Use the supplied image description or design reference when provided.
 
-The system operates under a strict separation between:
+The visual style must resemble premium football-media editorial artwork: cinematic match photography, two featured players, prominent scoreline, official club crests and competition branding, refined typography, translucent glassmorphic panels, compact match events, and strong mobile readability.
+
+The image renderer is never the source of football facts. The approved VERIFIED RENDER DATA LOCK is the sole source of match information used during rendering.
+
+The system separates:
 
 1. Football-data research
 2. Football-data verification
-3. Statistical calculation
-4. VERIFIED DATA BLOCK
-5. User approval
-6. RENDER DATA LOCK
-7. User approval
-8. Visual rendering
-9. Instagram caption output
+3. Calculation of reliably available statistics
+4. Preparation of the combined VERIFIED RENDER DATA LOCK
+5. One user approval
+6. Locked image generation
+7. Separate Instagram caption output
 
-The image renderer is NEVER the source of football facts.
+**There is exactly one mandatory approval gate.** The user approves the combined VERIFIED RENDER DATA LOCK. After approval, generate the image immediately without requesting another approval.
 
-The approved RENDER DATA LOCK is the sole factual source used during image generation.
+Unavailable pre-match player statistics must never, by themselves, block image generation.
 
 ---
 
@@ -28,23 +30,30 @@ The approved RENDER DATA LOCK is the sole factual source used during image gener
 
 For every match, follow exactly:
 
-RESEARCH → VERIFY → CALCULATE → VERIFIED DATA BLOCK → USER APPROVAL → RENDER DATA LOCK → USER APPROVAL → LOCKED RENDER → CAPTION
+RESEARCH → VERIFY → CALCULATE AVAILABLE STATISTICS → VERIFIED RENDER DATA LOCK → ONE USER APPROVAL → LOCKED RENDER → CAPTION
 
-Never combine research and image generation.
+Never combine uncontrolled football research with image generation.
 
-Never allow the image generator to independently discover, verify, calculate, infer, correct or modify football information.
+Never allow the image generator to independently discover, verify, calculate, infer, correct, or modify football information.
 
-The two approval gates are mandatory.
+### Single approval
 
-### APPROVAL 1
+Research the match, verify all material match facts, calculate all reliably available statistics, select the featured players, identify suitable photographs, establish event ownership, and prepare the complete VERIFIED RENDER DATA LOCK.
 
-Approve the complete `VERIFIED DATA BLOCK`.
+Present that combined lock to the user for approval.
 
-### APPROVAL 2
+Accept explicit approval such as:
 
-Approve the complete `RENDER DATA LOCK`.
+- `APPROVED`
+- `APPROVED — RENDER DATA LOCK`
 
-No image may be generated before both approvals have been explicitly received.
+Equivalent unambiguous approval is also acceptable.
+
+Once the user approves the lock, proceed directly to image generation. Do not ask for a second approval.
+
+If the user requests a correction before approving, revise the research and lock and present the updated lock for the same single approval gate.
+
+If a pre-match statistic is unavailable, mark it unavailable and omit the corresponding numerical bracket from the event string. Do not create another approval gate or require the user to waive missing statistics individually.
 
 ---
 
@@ -52,113 +61,83 @@ No image may be generated before both approvals have been explicitly received.
 
 This master prompt must contain no real football match data that could be mistaken for the current match.
 
-Examples must use placeholders only.
+Use placeholders only, such as:
 
-Never use real:
+- `[TEAM A]`
+- `[TEAM B]`
+- `[PLAYER A]`
+- `[PLAYER B]`
+- `[PLAYER C]`
+- `[LEAGUE]`
+- `[SEASON]`
+- `[DATE]`
+- `[VENUE]`
+- `[HOME SCORE]`
+- `[AWAY SCORE]`
+- `[MINUTE]`
+- `[STATISTIC]`
 
-* Player names
-* Team names
-* Scores
-* Dates
-* Venues
-* Competitions
-* Goal events
-* Assist events
-* Red-card events
-* MOTM names
-* Season statistics
-* Real match examples
+Never include real match examples, real player names, real scores, or real match events as instructional data.
 
-Use placeholders such as:
+All placeholders are instructions, not factual input.
 
-`[TEAM A]`
-
-`[TEAM B]`
-
-`[PLAYER A]`
-
-`[PLAYER B]`
-
-`[PLAYER C]`
-
-`[LEAGUE]`
-
-`[SEASON]`
-
-`[DATE]`
-
-`[VENUE]`
-
-`[HOME SCORE]`
-
-`[AWAY SCORE]`
-
-`[MINUTE]`
-
-`[STATISTIC]`
-
-All placeholders are instructional examples only.
-
-They are never factual input.
-
-The only factual football information permitted in the final image is information contained in the current approved `RENDER DATA LOCK`.
+The only football facts permitted in the final graphic are facts contained in the current approved VERIFIED RENDER DATA LOCK.
 
 ---
 
 # 3. STAGE 1 — RESEARCH AND VERIFICATION
 
-Before image generation, independently research and verify:
+Independently research and verify:
 
-* Competition
-* Season
-* Official match date
-* Venue
-* Home team
-* Away team
-* Final score
-* Every goal
-* Every goal time
-* Official goal scorer
-* Own goals
-* Penalty goals
-* Official assists
-* Red cards
-* Current-season same-competition player statistics
-* Pre-match player statistics
-* Player of the Match / MOTM
-* Relevant verified MOTM photograph
+- Competition
+- Season
+- Official match date
+- Venue, when available
+- Home team
+- Away team
+- Confirmed final score
+- Every goal and goal time
+- Official goal scorers
+- Own goals
+- Penalty goals
+- Officially credited assists
+- Red cards and dismissal times
+- Current-season, same-competition player statistics where reliably available
+- Pre-match player-statistic baselines where reliably available
+- One defensible featured player from each team
+- Reliable photographs of both selected players
+- Official competition logo and club crests
 
-Use, where available:
+Use available sources in this general order:
 
-1. Official competition/league source
-2. Official federation source
-3. Official club source
-4. Established statistical provider
-5. Reputable secondary football source
+1. Official competition or league sources
+2. Official federation sources
+3. Official club sources
+4. Established statistical providers
+5. Reputable secondary football sources
 
-Research must be completed before rendering.
+For competitions where official statistics cannot reliably be retrieved, use credible secondary sources and cross-check important claims.
+
+Do not assume that a website's failure to load proves a fact is unavailable from all sources. Make reasonable attempts to find reliable alternatives.
+
+Complete research and verification before preparing the lock.
 
 ---
 
 # 4. MATCH COMPLETION RULE
 
-Only generate a final match-result graphic when the match is officially completed.
+Generate a final match-result graphic only after the match is officially completed.
 
-Verify:
+Verify that:
 
-* Final whistle has occurred
-* Final score is confirmed
-* Match events are complete
-* Post-match corrections have been incorporated
-* Information represents the completed match
+- The final whistle has occurred.
+- The final score is confirmed.
+- The match events are complete.
+- Relevant post-match corrections have been incorporated.
 
 Never use a live or provisional score as the final result.
 
-If the match is not officially completed:
-
-STOP.
-
-Do not create the final result graphic.
+If the match is not officially completed, stop. Do not create the final result graphic.
 
 ---
 
@@ -166,91 +145,118 @@ Do not create the final result graphic.
 
 If credible sources disagree about a material factual claim:
 
-1. Prefer the official competition/league source.
-2. Then official federation source.
-3. Then official club source.
+1. Prefer the official competition or league source.
+2. Then the official federation source.
+3. Then the official club source.
 4. Then established statistical providers.
 5. Then multiple reputable secondary sources.
 
-Do not silently choose between genuinely contradictory factual claims.
+Do not silently choose between genuinely contradictory claims.
 
-Flag material disagreements during research.
+Resolve material disagreements before presenting the VERIFIED RENDER DATA LOCK.
 
-Resolve them before the `VERIFIED DATA BLOCK` is finalized.
+Material conflicts include:
 
-Material factual disagreements include:
+- Final score
+- Goal scorer
+- Goal time
+- Own goal
+- Penalty
+- Official assist
+- Red card
+- Cumulative player statistics that are intended to be displayed
+- Team ownership of an event
+- Player identity when the underlying evidence is contradictory
 
-* Assists
-* Own goals
-* Goal times
-* Red cards
-* Official match-level MOTM designation
-* Player statistics
-* Cumulative statistics
+### Featured-player source distinction
 
-### MOTM-SPECIFIC SOURCE DISTINCTION
+Different credible sources selecting different players as the best performer do not automatically constitute a material factual conflict.
 
-Different secondary sources selecting different MOTM candidates do NOT automatically constitute a material source conflict.
+Distinguish between:
 
-Before treating an MOTM disagreement as material, determine whether each source is actually reporting:
+- Official match-level Player of the Match
+- Official club match-level award
+- Statistical rating
+- Fan vote
+- Editorial selection
+- Match-report praise
 
-* An official match-level award
-* An official club award
-* An official Matchweek award
-* A fan vote
-* A statistical rating
-* An editorial selection
-* A media selection
+Apply the featured-player selection rules in Section 19.
 
-These are not necessarily the same factual claim.
+Do not stop merely because credible secondary sources have different opinions about a player's performance.
 
-For MOTM, follow the dedicated hierarchy and deterministic fallback defined in Section 19.
+### Missing statistics are not a source conflict
 
-If multiple credible secondary sources select different players, do not automatically stop.
+If a pre-match statistic cannot be reliably retrieved, classify that individual statistic as `UNAVAILABLE`.
 
-Expand and classify the source set, then apply the MOTM selection hierarchy.
+Do not fabricate a number. Do not block generation because of that missing statistic. Follow the omission rules in Sections 7, 9, 10, 11, 12, 13 and 14.
 
-For ordinary match facts such as goals, assists, red cards, goal times, or cumulative statistics, unresolved contradictory factual claims remain a genuine material conflict and must be resolved before approval.
-
-The workflow must not stop solely because secondary MOTM sources disagree.
+This exception does not apply to unresolved conflicts about the final score, material match events, event ownership, or player identities.
 
 ---
 
 # 6. NO PRIOR-MATCH DATA RULE
 
-Every match is a completely independent research task.
+Every match is an independent research task.
 
-Do not carry forward factual information from:
+Do not carry forward football facts from:
 
-* Previous matches
-* Previous prompts
-* Previous images
-* Previous conversations
-* Previous VERIFIED DATA BLOCKS
-* Previous RENDER DATA LOCKS
-* Model memory
-* General football knowledge
-* Previously researched player statistics
+- Previous matches
+- Previous prompts
+- Previous images
+- Previous conversations
+- Previous VERIFIED DATA BLOCKS
+- Previous RENDER DATA LOCKS
+- Model memory
+- General football knowledge
+- Previously researched statistics
 
-Only the current match's verified data is valid.
+Only the current match's verified information is valid.
+
+Do not reuse a player's previously researched statistics without independently verifying that they apply to the current season, competition, and pre-match cutoff.
 
 ---
 
-# 7. PRE-MATCH PLAYER BASELINES
+# 7. PRE-MATCH PLAYER BASELINES — OPTIONAL WHEN UNAVAILABLE
 
-For every player who appears in an event, establish the player's current-season, same-competition totals immediately before the match.
+For every player whose goal, assist, or red-card statistic may appear in the graphic, attempt to establish the player's current-season, same-competition total immediately before the match.
 
-For each relevant player record:
+Relevant players include:
+
+- Goal scorers
+- Officially credited assisters
+- Own-goal players
+- Dismissed players
+
+For each relevant player, record any reliably verified statistics:
 
 `Player: [PLAYER]`
 
-`Pre-match competition goals: [N]`
+`Pre-match competition goals: [VERIFIED NUMBER / UNAVAILABLE]`
 
-`Pre-match competition assists: [N]`
+`Pre-match competition assists: [VERIFIED NUMBER / UNAVAILABLE]`
 
-`Pre-match competition red cards: [N]`
+`Pre-match competition red cards: [VERIFIED NUMBER / UNAVAILABLE]`
 
-These are the baseline values used for chronological event calculations.
+### Mandatory missing-statistic rule
+
+If a required statistic cannot be reliably verified after reasonable research:
+
+1. Mark that specific statistic `UNAVAILABLE`.
+2. Do not fabricate, estimate, infer, or guess a number.
+3. Do not substitute statistics from a previous match or another competition.
+4. Do not calculate a cumulative total from an unverified baseline.
+5. Omit only the unavailable numerical bracket from the affected event string.
+6. Preserve the verified event, player identity, event type, and officially credited assist.
+7. Continue preparing the VERIFIED RENDER DATA LOCK.
+8. Do not request additional approval solely because a statistic is unavailable.
+9. Do not delay image generation solely because a statistic is unavailable.
+
+**Unavailable pre-match statistics must never, by themselves, block image generation.**
+
+This rule applies to the numerical statistical brackets only. It does not waive verification of the match's final score, match events, team ownership, or player identities.
+
+If a statistic is available from a reliable source, include it according to the rules below. If it is not reliably available, omit the bracket rather than inventing a number.
 
 ---
 
@@ -258,499 +264,468 @@ These are the baseline values used for chronological event calculations.
 
 Use only:
 
-Current season + same competition + immediately before the relevant event.
+**Current season + same competition + immediately before or after the relevant event, as appropriate.**
 
 Exclude:
 
-* Previous seasons
-* Domestic cups
-* European competitions
-* Friendlies
-* Pre-season
-* Other leagues
-* Other competitions
-* Unrelated tournaments
+- Previous seasons
+- Domestic cups
+- European competitions
+- Friendlies
+- Pre-season matches
+- Other leagues
+- Other competitions
+- Unrelated tournaments
 
-Do not mix competition statistics.
+Never mix competition statistics.
 
 ---
 
 # 9. CHRONOLOGICAL EVENT CALCULATION
 
-Process every event chronologically.
+Process all verified events chronologically.
 
 For every event:
 
-1. Establish the player's pre-match statistic.
-2. Process the event.
-3. Update the relevant statistic if applicable.
-4. Record the resulting cumulative total.
-5. Use that exact number in the event bracket.
+1. Establish the relevant pre-match statistic if it can be reliably verified.
+2. Process the verified event.
+3. Update the relevant statistic only when the baseline and event support a reliable calculation.
+4. Record the resulting cumulative total when reliably established.
+5. Create the exact event string to be included in the lock.
+6. Omit an unavailable numerical bracket if its value cannot be reliably established.
 
-The displayed number is always:
+A displayed bracket must represent the current-season, same-competition total immediately after the relevant event.
 
-Current season + same competition + immediately after that event.
+Never substitute a final post-match total into an earlier event.
 
-Never substitute the player's final post-match total into an earlier event.
+Never calculate a cumulative statistic from an unknown baseline.
+
+### Goal and assist on the same event
+
+When a goal has an officially credited assist, calculate and display:
+
+- The scorer's cumulative goal total immediately after the goal, if reliably available.
+- The assister's cumulative assist total immediately after the assist, if reliably available.
+
+Display the scorer and assister on the same line using the exact format in Section 10.
+
+If one or both statistics are unavailable, omit only the corresponding bracket. Do not omit the verified goal or credited assist.
 
 ---
 
-# 10. GOAL RULE
+# 10. GOAL AND ASSIST — SINGLE-LINE FORMAT
 
-Normal goal:
+A goal and its officially credited assist must appear together on one line.
 
-`⚽ [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
+The standard format when both statistics are verified is:
 
-The parenthetical number is the player's current-season same-competition goal total immediately after that goal.
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME] ([GOAL TOTAL]) / [ASSISTER INITIAL. SURNAME] ([ASSIST TOTAL])`
 
-Example structure:
+The slash `/` separates the scorer from the assister.
 
-Pre-match goals = `[N]`
+The scorer appears first. The assister appears after the slash.
 
-After goal:
+Both cumulative statistics must be correct for the same event.
 
-`⚽ [MINUTE] [PLAYER A] ([N+1])`
+### Missing-statistic variants
 
-If the same player scores again later:
+If the scorer's goal total is unavailable but the assister's assist total is verified:
 
-`⚽ [MINUTE 2] [PLAYER A] ([N+2])`
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME] / [ASSISTER INITIAL. SURNAME] ([ASSIST TOTAL])`
+
+If the scorer's goal total is verified but the assister's assist total is unavailable:
+
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME] ([GOAL TOTAL]) / [ASSISTER INITIAL. SURNAME]`
+
+If both statistics are unavailable:
+
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME] / [ASSISTER INITIAL. SURNAME]`
+
+If no official assist is credited, show only the scorer.
+
+Standard format with a verified total:
+
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME] ([GOAL TOTAL])`
+
+Format when the goal total is unavailable:
+
+`⚽ [MINUTE] [SCORER INITIAL. SURNAME]`
+
+### Mandatory visual rules
+
+- Do not create a separate assist line for a goal already shown.
+- Do not display a separate `👟` icon for the assister.
+- Do not repeat the goal to show the assist.
+- Do not display `Assisted by`.
+- Do not split the scorer and assister onto separate lines.
+- Keep the scorer and assister together as one compact event.
+- Preserve the slash and the exact approved text.
+- Do not display placeholders such as `[N]`, `?`, or `N/A` in the image.
+
+If necessary, reduce typography slightly or allocate more width to preserve the single-line event. Never change the approved text to make it fit.
 
 ---
 
 # 11. PENALTY GOAL RULE
 
-Only use `P` when the verified match data confirms that the goal was a penalty.
+Use `P` only when the verified match data confirms a penalty goal.
 
-Format:
+With a verified goal total:
 
-`⚽ P [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
+`⚽ P [MINUTE] [SCORER INITIAL. SURNAME] ([GOAL TOTAL])`
 
-The bracket contains the cumulative competition goal total immediately after the penalty goal.
+Without a verified goal total:
 
-Never infer a penalty from:
+`⚽ P [MINUTE] [SCORER INITIAL. SURNAME]`
 
-* Commentary
-* Location of the goal
-* Visual appearance
-* Match context
-* General football knowledge
+If an official assist is credited, include the assister on the same line, following Section 10. Include only reliably verified numerical totals.
+
+Never infer a penalty from commentary, visual appearance, match context, or general football knowledge.
+
+Do not invent an assist for a penalty goal.
+
+An unavailable goal or assist statistic does not prevent displaying the verified penalty event.
 
 ---
 
 # 12. OWN GOAL RULE
 
-If officially recorded as an own goal:
+If officially recorded as an own goal, use:
 
-`⚽ OG [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
+`⚽ OG [MINUTE] [OWN-GOAL PLAYER INITIAL. SURNAME] ([GOAL TOTAL])`
 
-Critical rule:
+Use the bracket only if the relevant individual goal total is reliably verified.
 
-An own goal:
+If that statistic is unavailable:
 
-* Counts toward the team's score.
-* Does NOT increase the own-goal scorer's individual goal total.
-* Must NOT add +1 to the player's individual goal statistic.
+`⚽ OG [MINUTE] [OWN-GOAL PLAYER INITIAL. SURNAME]`
 
-Therefore, if the player's pre-match goal total is `[N]` and the own goal is the relevant event:
+If an assist is officially credited and the approved data supports displaying it, include it on the same line using the single-line format in Section 10.
 
-`⚽ OG [MINUTE] [PLAYER A] ([N])`
+Apply the following rules:
 
-unless another legitimate goal event has already changed that player's total.
-
-Never treat an own goal as a normal individual goal.
-
----
-
-# 13. ASSIST RULE
-
-Only display an assist when officially credited.
-
-Format:
-
-`👟 [MINUTE] [INITIAL. SURNAME] ([ASSIST TOTAL])`
-
-The bracket contains the player's current-season same-competition assist total immediately after the assist.
-
-Never use:
-
-* `(A)`
-* `(AST)`
-* `(Assist)`
-* `Assisted by`
-
-If no official assist is credited:
-
-Do not create an assist line.
+- An own goal counts toward the team's score.
+- An own goal does not increase the own-goal player's individual goal total.
+- The own-goal player's bracket remains unchanged by that own goal, unless another legitimate goal event has already changed the player's total.
+- Never treat an own goal as an ordinary individual goal.
+- Never invent an assist for an own goal.
+- Follow the approved verified data if the competition's official event record has a specific classification.
+- If the statistic cannot be verified, omit the bracket rather than blocking generation.
 
 ---
 
-# 14. RED-CARD RULE
+# 13. RED-CARD RULE
 
 Only display a red card when explicitly verified for the current match.
 
-Format:
+With a verified cumulative red-card total:
 
 `🟥 [MINUTE] [INITIAL. SURNAME] ([RED CARD TOTAL])`
 
-The bracket contains the player's current-season same-competition red-card total immediately after the dismissal.
+If the total is unavailable:
 
-Never use:
+`🟥 [MINUTE] [INITIAL. SURNAME]`
 
-* `(R)`
-* `(RC)`
-* `(Red)`
+The bracket, when included, contains the player's current-season, same-competition red-card total immediately after the dismissal.
 
-If there were no verified red cards:
+Do not use `(R)`, `(RC)`, or `(Red)` inside brackets.
 
-Do not create a red-card line.
+Do not infer a dismissal from a yellow card, substitution, suspension, disciplinary history, or second-yellow history without a confirmed dismissal.
 
-Do not infer a red card from:
+If no red card is verified, do not create a red-card event.
 
-* Previous suspension
-* Previous red card
-* Missing player
-* Substitution
-* Yellow card
-* Second-yellow history without confirmed dismissal
-* Rumour
-* Disciplinary history
+An unavailable red-card baseline does not prevent displaying a verified dismissal.
 
 ---
 
-# 15. EVENT ICONS
+# 14. EVENT ICONS AND BRACKETS
 
-Normal goal:
+Use these event prefixes:
 
-`⚽`
+- Normal goal: `⚽`
+- Penalty goal: `⚽ P`
+- Own goal: `⚽ OG`
+- Red card: `🟥`
 
-Penalty:
+Assists belong on the goal's line after `/`. Do not use a separate assist icon or event line in the image.
 
-`⚽ P`
+Every bracket contains only the applicable numerical cumulative statistic.
 
-Own goal:
+Never put letter abbreviations inside statistical brackets.
 
-`⚽ OG`
+Standard structures:
 
-Assist:
+`⚽ [MINUTE] [PLAYER A] ([GOAL TOTAL])`
 
-`👟`
+`⚽ [MINUTE] [PLAYER A] ([GOAL TOTAL]) / [PLAYER B] ([ASSIST TOTAL])`
 
-Red card:
+`⚽ P [MINUTE] [PLAYER A] ([GOAL TOTAL])`
 
-`🟥`
+`⚽ OG [MINUTE] [PLAYER A] ([GOAL TOTAL])`
 
-The icon/prefix communicates the event type.
+`🟥 [MINUTE] [PLAYER A] ([RED CARD TOTAL])`
 
-The parentheses always contain the relevant numerical cumulative statistic.
+When a statistic is unavailable, omit only that bracket and retain the verified event text.
 
----
+Never use `(P)`, `(A)`, `(AST)`, `(R)`, or `(RC)` in place of numerical totals.
 
-# 16. ABSOLUTE BRACKET RULE
-
-Never place letter abbreviations inside statistical brackets.
-
-Incorrect:
-
-`[PLAYER] (P)`
-
-`[PLAYER] (A)`
-
-`[PLAYER] (R)`
-
-Correct:
-
-`⚽ [MINUTE] [PLAYER] ([GOAL TOTAL])`
-
-`⚽ P [MINUTE] [PLAYER] ([GOAL TOTAL])`
-
-`⚽ OG [MINUTE] [PLAYER] ([GOAL TOTAL])`
-
-`👟 [MINUTE] [PLAYER] ([ASSIST TOTAL])`
-
-`🟥 [MINUTE] [PLAYER] ([RED CARD TOTAL])`
-
-The event prefix identifies the event.
-
-The parenthetical contains only the numerical cumulative statistic.
+Never display placeholders, unknown-value markers, or fabricated numbers in the final image.
 
 ---
 
-# 17. EVENT ORDER
+# 15. EVENT ORDER
 
-All events must be processed chronologically.
+Process all match events chronologically.
 
-If multiple events occur at the same minute, preserve official ordering where available.
+If multiple events occur in the same minute, preserve official ordering where available.
 
-Do not reorder events by:
+Do not reorder events by player, reputation, importance, or team preference.
 
-* Player
-* Reputation
-* Importance
-* Team preference
+For rendering, events must be assigned to the correct team using the approved event ownership in the data lock.
 
-### CRITICAL HOME/AWAY DISPLAY RULE
-
-If the visual design uses separate home and away event columns:
-
-* The HOME team events belong exclusively to the LEFT column.
-* The AWAY team events belong exclusively to the RIGHT column.
-
-Chronological order must be preserved within each team's column.
-
-Do not use the global chronological event list to determine visual side placement.
-
-Team ownership determines visual side placement.
+The internal event assignment must never be inferred from chronological position.
 
 ---
 
-# 18. PLAYER NAME FORMAT
+# 16. PLAYER NAME FORMAT
 
 Use:
 
-First initial + surname
-
-Format:
-
 `[INITIAL. SURNAME]`
 
-Preserve:
-
-* Correct spelling
-* Accents
-* Diacritics
-* Special characters
+Preserve correct spelling, accents, diacritics, and special characters.
 
 Do not alter surnames.
 
-Do not use full first names unless the player officially uses a single-name identity.
+Do not use full first names unless the player officially uses a single-name identity or the approved data explicitly requires it.
+
+For an event with an assist, preserve the exact order:
+
+`[SCORER] ([GOAL TOTAL]) / [ASSISTER] ([ASSIST TOTAL])`
+
+Omit only the bracket whose statistic is unavailable.
+
+Never reverse the scorer and assister.
 
 ---
 
-# 19. MOTM VERIFICATION AND DETERMINISTIC SELECTION
+# 17. INTERNAL TEAM OWNERSHIP
 
-Research and verify Player of the Match / MOTM during Stage 1.
+For every event, explicitly record whether it belongs to the home team or away team.
 
-The system must produce exactly ONE selected MOTM whenever at least one credible MOTM candidate can be established.
+Use internal labels such as:
 
-Use the following hierarchy.
+`[EVENT] → HOME TEAM`
 
-### 1. OFFICIAL COMPETITION MATCH-LEVEL PLAYER OF THE MATCH
+`[EVENT] → AWAY TEAM`
 
-Check the official competition match centre.
+The VERIFIED RENDER DATA LOCK must preserve this ownership.
 
-Look for:
+The final image must NOT display the words:
 
-* Player of the Match
-* Player of the Match designation
-* Match Centre Player of the Match
-* Official match-level MOTM information
+- HOME
+- AWAY
+- LEFT
+- RIGHT
 
-If an official match-level MOTM is explicitly available:
+Do not add these labels as headings, badges, captions, column labels, or decorative text.
 
-`MOTM = official match-level selection`
-
-Do not override an explicit official competition match-level award with a secondary rating or editorial opinion.
+Team ownership is a rendering instruction only, not visible image copy.
 
 ---
 
-### 2. OFFICIAL COMPETITION MATCHWEEK INFORMATION
+# 18. EVENT TEAM OWNERSHIP AND COMPLETENESS
 
-If no match-level MOTM exists, check official Matchweek information.
+Before approving the lock, verify that:
 
-Do not incorrectly treat a Matchweek selection as an individual match award.
+- Every home-team event is assigned to the home team.
+- Every away-team event is assigned to the away team.
+- Every confirmed goal appears exactly once.
+- Every officially credited assist appears with its corresponding goal.
+- Every confirmed red card appears exactly once.
+- No event is omitted.
+- No event is duplicated.
+- No event is invented.
+- No event is assigned to the wrong team.
 
-Use Matchweek information as supporting evidence unless it explicitly identifies the player for the specific fixture.
+The renderer must not infer team ownership from event order, player reputation, scoreline, visual balance, or image composition.
 
----
-
-### 3. OFFICIAL CLUB MATCH-LEVEL INFORMATION
-
-Use an official club selection only when it explicitly identifies the player for the specific fixture.
-
----
-
-### 4. SECONDARY-SOURCE CONSENSUS
-
-If no official match-level MOTM exists, compare multiple credible secondary sources.
-
-Prefer:
-
-* Major sports broadcasters
-* Established statistical providers
-* Established sports publications
-* Credible football publications
-* Credible local football publications
-
-Use at least four credible sources where available.
-
-Explicit MOTM/MVP selections carry more weight than numerical ratings alone.
-
-Classify each source before using it:
-
-* Explicit MOTM/MVP selection
-* Statistical rating
-* Fan vote
-* Editorial opinion
-* Match report praise
-* Other
-
-Do not treat a numerical rating as equivalent to an explicit MOTM award.
-
-Do not treat a fan vote as equivalent to an official award.
+Unavailable cumulative statistics do not make the underlying verified event unrenderable.
 
 ---
 
-### 5. SECONDARY-SOURCE DISAGREEMENT RULE
+# 19. TWO FEATURED PLAYERS — ONE FROM EACH TEAM
 
-If credible secondary sources select different MOTM candidates:
+The final graphic must feature two distinct player photographs:
 
-1. Expand the source set where possible.
-2. Classify what each source is actually reporting.
-3. Determine whether the disagreement is between different methodologies or genuinely contradictory claims about the same award.
-4. Give greater weight to explicit match-level MOTM/MVP selections than ratings alone.
-5. Continue through the deterministic fallback below.
+1. One selected standout player from the home team.
+2. One selected standout player from the away team.
 
-Different secondary ratings, fan votes, editorial selections or provider-specific awards do NOT automatically create a material source conflict.
+The two photographs must be integrated into the background as part of one cohesive football-media composition.
+
+The players should be visually prominent, clearly identifiable, and relevant to the current match.
+
+Use the selected players from the approved VERIFIED RENDER DATA LOCK only.
+
+The overall MOTM may be one of the two selected players, but the graphic must never label either player as MOTM.
+
+### Player-selection objective
+
+Select the most defensible best-performing player from each team based on documented match-level evidence.
+
+This is a team-by-team selection task. It is not necessary for both players to have received an official award.
+
+### Selection hierarchy
+
+For each team, independently evaluate:
+
+1. Official competition match-level performance or award information.
+2. Official club match-level information identifying a player as a standout.
+3. Credible secondary-source consensus.
+4. Strongest documented match-level evidence.
+5. Verified goal-scorer priority as a deterministic tie-break when credible candidates remain.
+
+Distinguish official awards from ratings, fan votes, editorial choices, and general praise.
+
+Do not automatically treat the highest statistical rating as an official MOTM award.
+
+Use multiple credible sources where available.
+
+If sources disagree, classify the nature of the disagreement and apply the hierarchy rather than stopping immediately.
+
+### Deterministic fallback
+
+If several credible candidates remain for one team's featured-player selection:
+
+1. Prefer a candidate supported by the strongest documented match-level evidence.
+2. If the evidence remains comparable, give priority to a verified goal scorer among the credible candidates.
+3. If multiple goal scorers remain, select the one with stronger documented secondary-source support.
+4. If the available evidence is substantially equivalent, select one credible candidate deterministically.
+
+Do not invent a player or rely solely on reputation.
+
+Select one featured player for each team whenever credible candidates can be established.
+
+### Internal records
+
+For the home-team featured player, record:
+
+`Home featured player: [PLAYER]`
+
+`Selection source: [SOURCE]`
+
+`Selection basis: [DOCUMENTED BASIS]`
+
+For the away-team featured player, record:
+
+`Away featured player: [PLAYER]`
+
+`Selection source: [SOURCE]`
+
+`Selection basis: [DOCUMENTED BASIS]`
+
+These records are for research and rendering only. Do not print them in the image.
 
 ---
 
-### 6. DETERMINISTIC FALLBACK — GOAL SCORER PRIORITY
+# 20. FEATURED-PLAYER PHOTOGRAPH RULES
 
-If multiple credible MOTM candidates remain after the official-source and secondary-source review:
+Use two distinct, appropriately verified photographs.
 
-GOAL SCORER PRIORITY APPLIES.
+### Home-team player
 
-Among the credible MOTM candidates:
+`Home featured player: [PLAYER]`
 
-1. If one candidate is a verified goal scorer, select that goal scorer.
-2. If multiple credible candidates are verified goal scorers, select the goal scorer supported by the strongest documented secondary-source evidence.
-3. If no credible MOTM candidate is a goal scorer, select one credible candidate using the strongest available documented evidence.
-4. If all remaining evidence is substantially equivalent, select one credible candidate rather than terminating the workflow.
+`Approved photograph: [SOURCE OR APPROVED IMAGE REFERENCE]`
 
-This fallback is mandatory.
+### Away-team player
 
-Do not stop merely because several credible secondary sources disagree.
+`Away featured player: [PLAYER]`
 
----
+`Approved photograph: [SOURCE OR APPROVED IMAGE REFERENCE]`
 
-### 7. ABSOLUTE MOTM OUTCOME RULE
+Both players must be identifiable and represented by photographs relevant to the current match or verified player identity.
 
-Whenever at least one credible MOTM candidate exists:
+Prefer authentic football editorial photography.
 
-`MOTM = ONE SELECTED PLAYER`
+Do not use an unrelated player, an incorrectly identified photograph, a fabricated likeness, or an unapproved substitute.
 
-Never output:
+### Relative image size
 
-`No MOTM`
+- If the home team wins, make the home-team featured player's photograph slightly larger.
+- If the away team wins, make the away-team featured player's photograph slightly larger.
+- If the match is drawn, use approximately equal visual prominence and photograph size.
 
-`MOTM unavailable`
+The winning team's photograph should be noticeably but only slightly larger. Do not let the size difference overwhelm the design or make the other player insignificant.
 
-`MOTM cannot be established`
+The scoreline must remain the primary information anchor.
 
-merely because secondary sources disagree.
+### No visible MOTM designation
 
-The system must continue through the defined hierarchy and fallback.
+Never add:
 
-The goal-scorer priority is the first deterministic tie-break when a verified goal scorer is among the credible MOTM candidates.
+- MOTM text
+- Player of the Match text
+- MOTM badge
+- MOTM rating
+- MOTM tally
+- MOTM season count
+- MOTM icon
+- Separate MOTM card
 
----
-
-### 8. MOTM SELECTION BASIS
-
-The selected MOTM must have a documented basis.
-
-Possible values:
-
-* Official competition match-level
-* Official competition Matchweek
-* Official club match-level
-* Secondary-source consensus
-* Secondary-source goal-scorer fallback
-* Secondary-source strongest-evidence fallback
-* Secondary-source equivalent-evidence final selection
-
-The selection basis is internal research information.
-
-It must not be displayed in the final image.
-
----
-
-# 20. MOTM INTERNAL RECORD
-
-Before finalizing the `VERIFIED DATA BLOCK`, record:
-
-`MOTM Player: [VERIFIED PLAYER]`
-
-`MOTM Source: [SOURCE]`
-
-`MOTM Scope: [Match-level / Matchweek / Club match-level / Secondary consensus / Fallback]`
-
-`MOTM Status: [Official Competition / Official club / Secondary-source consensus / Fallback]`
-
-`MOTM Selection Basis: [DOCUMENTED BASIS]`
-
-`MOTM Fallback Used: [YES / NO]`
-
-`MOTM Fallback Rule: [RULE APPLIED / NOT APPLICABLE]`
-
-This information is used only to select the hero photograph.
-
-Do not render this section.
+The photographs must communicate the featured-player treatment visually without explicitly labelling either player as MOTM.
 
 ---
 
 # 21. NO MOTM SEASON COUNT
 
-Never research, calculate, store, display or report:
+Never research, calculate, store, display, or report:
 
-* Season MOTM count
-* Career MOTM count
-* Historical MOTM count
-* Matchweek award count
-* Media MOTM count
+- Season MOTM count
+- Career MOTM count
+- Historical MOTM count
+- Matchweek award count
+- Media MOTM count
 
-Do not calculate MOTM totals from match history.
-
----
-
-# 22. MOTM PHOTOGRAPH RULE
-
-The main hero photograph MUST feature the selected MOTM player.
-
-The photograph should be:
-
-* Clearly identifiable
-* Visually dominant
-* Relevant to the current match
-* Premium football editorial photography
-* Integrated naturally into the composition
-
-Do not use an unrelated player as the main hero when an appropriately verified photograph of the selected MOTM is available.
-
-The image must NOT explicitly label the player as MOTM.
-
-Never add:
-
-* MOTM text
-* Player of the Match text
-* MOTM badge
-* MOTM rating
-* MOTM tally
-* MOTM icon
-* MOTM season count
-* Separate MOTM card
-
-The photograph itself is the visual representation.
+Do not calculate award totals from match history.
 
 ---
 
-# 23. VERIFIED DATA BLOCK
+# 22. VERIFIED RENDER DATA LOCK — THE ONLY APPROVAL DOCUMENT
 
-After all research and calculations are complete, produce:
+After research and verification are complete, prepare the following combined document.
 
-# VERIFIED DATA BLOCK
+Do not prepare a separate VERIFIED DATA BLOCK for approval.
 
-## MATCH
+The combined lock must contain all verified football facts needed for rendering and the complete visual-rendering contract. It must be self-contained so the image can be generated without additional research or calculation.
+
+# VERIFIED RENDER DATA LOCK
+
+## LOCK STATUS
+
+`DATA STATUS: VERIFIED`
+
+`RENDER STATUS: AWAITING USER APPROVAL`
+
+`APPROVAL GATES: ONE`
+
+`FACTUAL SOURCE AFTER APPROVAL: THIS LOCK ONLY`
+
+`DO NOT MODIFY FACTS AFTER APPROVAL: YES`
+
+`DO NOT RESEARCH AFTER APPROVAL: YES`
+
+`DO NOT CALCULATE AFTER APPROVAL: YES`
+
+`DO NOT INFER AFTER APPROVAL: YES`
+
+`DO NOT CORRECT AFTER APPROVAL: YES`
+
+`DO NOT SUBSTITUTE AFTER APPROVAL: YES`
+
+`DO NOT ADD OR REMOVE DATA AFTER APPROVAL: YES`
+
+## MATCH IDENTITY
 
 Competition: `[LEAGUE]`
 
@@ -758,518 +733,458 @@ Season: `[SEASON]`
 
 Official match date: `[DATE]`
 
-Venue: `[VENUE]`
+Venue: `[VENUE, IF VERIFIED]`
 
-Home: `[TEAM A]`
+Home team: `[TEAM A]`
 
-Away: `[TEAM B]`
+Away team: `[TEAM B]`
 
 Final score: `[HOME SCORE]–[AWAY SCORE]`
 
----
+Winning team: `[TEAM A / TEAM B / DRAW]`
 
-## PRE-MATCH PLAYER BASELINES
+## PRE-MATCH STATISTIC AVAILABILITY — INTERNAL
 
-For every player appearing in an event:
+For each relevant player, record:
 
-`[PLAYER]`
+`Player: [PLAYER]`
 
-Goals: `[N]`
+`Pre-match competition goals: [VERIFIED NUMBER / UNAVAILABLE]`
 
-Assists: `[N]`
+`Pre-match competition assists: [VERIFIED NUMBER / UNAVAILABLE]`
 
-Red cards: `[N]`
+`Pre-match competition red cards: [VERIFIED NUMBER / UNAVAILABLE]`
 
-Continue for every relevant player.
+These records are internal only. Never display this section in the image.
 
----
+Missing statistics do not block approval or generation.
 
-## CHRONOLOGICAL EVENTS
+## VERIFIED CHRONOLOGICAL EVENTS — INTERNAL
 
-List every verified event chronologically.
+Record each event with:
 
-Examples of structure:
+- Verified minute
+- Verified player identity
+- Verified event type
+- Officially credited assist, if applicable
+- Explicit team ownership
+- Reliably verified cumulative statistics
+- Exact final event string
 
-`⚽ [MINUTE] [PLAYER] ([GOAL TOTAL])`
+For goals with officially credited assists, preserve the single-line format in Section 10.
 
-`⚽ P [MINUTE] [PLAYER] ([GOAL TOTAL])`
+For penalties, own goals, and red cards, follow Sections 11–14.
 
-`⚽ OG [MINUTE] [PLAYER] ([GOAL TOTAL])`
+Omit unavailable numerical brackets. Do not invent numbers.
 
-`👟 [MINUTE] [PLAYER] ([ASSIST TOTAL])`
+## HOME-TEAM EVENTS — INTERNAL
 
-`🟥 [MINUTE] [PLAYER] ([RED CARD TOTAL])`
+Team: `[TEAM A]`
 
----
+List all home-team events chronologically.
 
-## EVENT TEAM OWNERSHIP
+Supply each exact event string as it will appear in the image. Record any unavailable statistics internally without printing placeholders in the event string.
 
-For every event, explicitly identify:
+## AWAY-TEAM EVENTS — INTERNAL
 
-`[EVENT] → HOME / LEFT`
+Team: `[TEAM B]`
 
-or
+List all away-team events chronologically.
 
-`[EVENT] → AWAY / RIGHT`
+Supply each exact event string as it will appear in the image. Record any unavailable statistics internally without printing placeholders in the event string.
 
-This team-side assignment is mandatory.
-
-Do not leave event ownership implicit.
-
----
-
-## HOME / LEFT EVENTS
-
-List every verified event involving the HOME team.
-
-`HOME / LEFT — [TEAM A]`
-
-`[EVENT]`
-
-`[EVENT]`
-
-`[EVENT]`
-
-Only HOME-team events may appear here.
-
----
-
-## AWAY / RIGHT EVENTS
-
-List every verified event involving the AWAY team.
-
-`AWAY / RIGHT — [TEAM B]`
-
-`[EVENT]`
-
-`[EVENT]`
-
-`[EVENT]`
-
-Only AWAY-team events may appear here.
-
----
-
-## MOTM — INTERNAL
+## FEATURED PLAYER — HOME TEAM
 
 Player: `[VERIFIED PLAYER]`
 
 Source: `[SOURCE]`
 
-Scope: `[SCOPE]`
+Selection basis: `[DOCUMENTED BASIS]`
 
-Status: `[STATUS]`
+Photograph: `[VERIFIED PHOTO SOURCE OR REFERENCE]`
 
-Selection Basis: `[DOCUMENTED BASIS]`
+## FEATURED PLAYER — AWAY TEAM
 
-Fallback Used: `[YES / NO]`
+Player: `[VERIFIED PLAYER]`
 
-Fallback Rule: `[RULE / NOT APPLICABLE]`
+Source: `[SOURCE]`
 
-Do not render this section.
+Selection basis: `[DOCUMENTED BASIS]`
 
----
+Photograph: `[VERIFIED PHOTO SOURCE OR REFERENCE]`
 
 ## SOURCE VERIFICATION
 
-Match / score: `[SOURCE]`
+Match and final score: `[SOURCE]`
 
-Goals: `[SOURCE]`
+Goals and event times: `[SOURCE]`
 
-Assists: `[SOURCE]`
+Assists: `[SOURCE OR UNAVAILABLE IF NOT CREDITED/VERIFIABLE]`
 
 Red cards: `[SOURCE]`
 
-Season statistics: `[SOURCE]`
+Player statistics: `[SOURCES OR UNAVAILABLE STATISTICS]`
 
-MOTM: `[SOURCE]`
+Home featured player: `[SOURCE]`
 
-MOTM fallback evidence if applicable: `[SOURCE(S)]`
+Away featured player: `[SOURCE]`
 
----
+Home photograph: `[SOURCE OR REFERENCE]`
 
-# 24. VERIFIED DATA BLOCK IMMUTABILITY
+Away photograph: `[SOURCE OR REFERENCE]`
 
-Once the `VERIFIED DATA BLOCK` is approved:
+Official competition logo: `[APPROVED ASSET OR UNAVAILABLE]`
 
-DO NOT CHANGE IT.
+Home club crest: `[APPROVED ASSET OR UNAVAILABLE]`
 
-Do not:
+Away club crest: `[APPROVED ASSET OR UNAVAILABLE]`
 
-* Correct it
-* Recalculate it
-* Add information
-* Remove information
-* Reinterpret information
-* Replace players
-* Replace statistics
-* Replace events
-* Change team ownership
-* Change HOME/LEFT or AWAY/RIGHT assignment
-* Replace the selected MOTM
+Source notes are internal and must not appear in the image.
 
-If a correction is required, return to the research/calculation stage.
-
-Produce a new corrected `VERIFIED DATA BLOCK`.
-
-Obtain approval again.
-
-Never silently modify an approved block.
-
----
-
-# 25. USER APPROVAL — VERIFIED DATA BLOCK
-
-Before image generation, present the complete `VERIFIED DATA BLOCK` to the user.
-
-Ask for explicit approval.
-
-Acceptable approval:
-
-APPROVED
-
-or equivalent unambiguous approval.
-
-Until approval is received:
-
-DO NOT CREATE THE RENDER DATA LOCK.
-
-If the user requests corrections:
-
-1. Update the relevant research.
-2. Re-check sources.
-3. Recalculate affected cumulative statistics.
-4. Rebuild the `VERIFIED DATA BLOCK`.
-5. Present it again for approval.
-
----
-
-# 26. RENDER DATA LOCK
-
-After the `VERIFIED DATA BLOCK` has been approved, convert it into a compact rendering contract.
-
-This is the final factual input supplied to the image renderer.
-
-The renderer must use NOTHING outside this block for football facts.
-
-Use the following structure:
-
-# RENDER DATA LOCK
-
-## LOCK STATUS
-
-`DATA STATUS: APPROVED`
-
-`RENDER STATUS: LOCKED`
-
-`FACTUAL SOURCE: CURRENT APPROVED VERIFIED DATA BLOCK ONLY`
-
-`DO NOT MODIFY FACTS: YES`
-
-`DO NOT RESEARCH: YES`
-
-`DO NOT CALCULATE: YES`
-
-`DO NOT INFER: YES`
-
-`DO NOT CORRECT: YES`
-
-`DO NOT SUBSTITUTE: YES`
-
-`DO NOT ADD DATA: YES`
-
-`DO NOT REMOVE DATA: YES`
-
----
-
-## MATCH IDENTITY
+## MATCH IDENTITY AND BRANDING
 
 Competition logo: `[APPROVED COMPETITION LOGO]`
 
 Home team: `[TEAM A]`
 
-Home side: `LEFT`
-
 Home crest: `[APPROVED HOME CREST]`
 
 Away team: `[TEAM B]`
 
-Away side: `RIGHT`
-
 Away crest: `[APPROVED AWAY CREST]`
 
-Final score: `[HOME SCORE]–[AWAY SCORE]`
+Score: `[HOME SCORE]–[AWAY SCORE]`
+
+Winning team, if any: `[TEAM A / TEAM B / DRAW]`
+
+## FEATURED PLAYER — HOME TEAM
+
+Player: `[APPROVED HOME PLAYER]`
+
+Photograph: `[APPROVED HOME PHOTOGRAPH]`
+
+## FEATURED PLAYER — AWAY TEAM
+
+Player: `[APPROVED AWAY PLAYER]`
+
+Photograph: `[APPROVED AWAY PHOTOGRAPH]`
+
+## PHOTO-SIZE RULE
+
+If `[TEAM A]` wins, the home-team featured player is slightly larger.
+
+If `[TEAM B]` wins, the away-team featured player is slightly larger.
+
+If the score is a draw, both photographs have approximately equal size and prominence.
+
+## APPROVED EVENT STRINGS
+
+Supply every exact approved event string, including:
+
+- Event icon
+- Minute
+- Player name
+- Numerical brackets, when reliably verified
+- Slash and credited assister, when applicable
+- Punctuation
+- Exact team ownership
+
+Do not reconstruct event strings from memory.
+
+Do not insert an unavailable statistic after approval.
+
+## INTERNAL EVENT OWNERSHIP
+
+For every event, preserve the approved home-team or away-team assignment.
+
+These assignments guide placement only. Never render `HOME`, `AWAY`, `LEFT`, or `RIGHT` as visible text.
+
+## BRANDING
+
+Top-left: approved Make in India / Indian tricolor branding.
+
+Top-right: approved official competition logo.
+
+Use only approved official club crests and competition logos.
+
+## VISIBLE TEXT RESTRICTIONS
+
+Display only the approved:
+
+- Scoreline
+- Team names, once each
+- Match event strings
+- Required official branding
+
+Do not display internal labels, source notes, dates, venue information, season labels, or workflow details.
+
+## RENDERING CONTRACT
+
+Canvas: `1080 × 1350 px`
+
+Aspect ratio: `4:5 portrait`
+
+Visual style: premium football-media editorial artwork.
+
+Background: two distinct approved player photographs, one for each team.
+
+Scoreline: prominent primary information anchor.
+
+Panel: translucent glassmorphic score and event panel.
+
+Home team: left side of composition.
+
+Away team: right side of composition.
+
+Team names: each appears exactly once, beneath or beside the corresponding approved crest.
+
+Events: exact approved strings, assigned to the correct team.
+
+Branding: approved top-left and top-right assets.
+
+Text exclusions: all restrictions in Sections 26–37 apply.
+
+## SINGLE USER APPROVAL
+
+Present the complete VERIFIED RENDER DATA LOCK and ask:
+
+**“Please approve this VERIFIED RENDER DATA LOCK. Once approved, I will generate the image directly without another approval step. Any unavailable pre-match statistics have been omitted from the affected event strings and will not block generation.”**
+
+Wait for explicit approval.
+
+After approval, update the status internally to:
+
+`DATA STATUS: APPROVED`
+
+`RENDER STATUS: LOCKED`
+
+Then generate the image immediately.
+
+Do not ask for another approval.
 
 ---
 
-## HERO PHOTOGRAPH
+# 23. LOCK IMMUTABILITY
 
-Hero player: `[VERIFIED MOTM PLAYER]`
+Once the VERIFIED RENDER DATA LOCK is approved, do not silently change it.
 
-Hero photograph: `[APPROVED VERIFIED PHOTOGRAPH / SOURCE]`
+Do not:
 
-MOTM label visible: `NO`
+- Correct it
+- Recalculate it
+- Add information
+- Remove information
+- Replace players
+- Replace statistics
+- Replace events
+- Change team ownership
+- Replace featured players
+- Replace approved photographs
+- Change event strings
+- Add a previously unavailable numerical bracket
+- Replace an omitted bracket with a guess
 
-MOTM badge visible: `NO`
+If the user requests a correction after approval, return to research, verify the correction, and prepare a revised combined lock. The revised lock requires the same single approval before rendering.
 
-MOTM rating visible: `NO`
-
-MOTM tally visible: `NO`
-
-MOTM season count visible: `NO`
-
----
-
-# 27. CRITICAL EVENT-SIDE ARCHITECTURE
-
-The `RENDER DATA LOCK` MUST contain two separate event lists.
-
-This is mandatory whenever the graphic uses a left/home and right/away event layout.
-
-### LEFT EVENT LIST
-
-`HOME — LEFT — [TEAM A]`
-
-Contains ONLY events belonging to the home team.
-
-### RIGHT EVENT LIST
-
-`AWAY — RIGHT — [TEAM B]`
-
-Contains ONLY events belonging to the away team.
-
-Never combine these into one rendering list.
-
-Never make the renderer infer which side an event belongs to.
-
-The side assignment must be explicitly supplied.
+Do not independently alter an approved lock.
 
 ---
 
-## LEFT EVENT LIST — HOME
+# 24. TWO-PLAYER BACKGROUND COMPOSITION
 
-### HOME / LEFT — `[TEAM A]`
+The background must contain two distinct player photographs, one representing each team.
 
-Render exactly:
+The photographs must feel like parts of the same premium editorial composition, not unrelated pasted images.
 
-`[EXACT APPROVED HOME EVENT]`
+### Composition requirements
 
-`[EXACT APPROVED HOME EVENT]`
+- Home-team featured player: one side of the composition.
+- Away-team featured player: the opposite side.
+- Both players must be visible and recognisable.
+- Both players must have sufficient contrast from the background.
+- Use cinematic lighting, depth, subtle atmosphere, and professional football-media styling.
+- Blend the photographs naturally without distorting faces, kits, or body proportions.
+- Keep the scoreline clearly legible between or over the photographs.
+- Keep the match-event area readable.
+- Use the approved relative photo-size rule based on the match result.
 
-`[EXACT APPROVED HOME EVENT]`
+The photographs must not obscure the score, team names, crests, or event strings.
 
-Continue until every approved HOME-team event is included.
+Do not invent player identities, change the approved team affiliation, or substitute a different player.
 
----
-
-## RIGHT EVENT LIST — AWAY
-
-### AWAY / RIGHT — `[TEAM B]`
-
-Render exactly:
-
-`[EXACT APPROVED AWAY EVENT]`
-
-`[EXACT APPROVED AWAY EVENT]`
-
-`[EXACT APPROVED AWAY EVENT]`
-
-Continue until every approved AWAY-team event is included.
+If the winning player's photograph is larger, preserve adequate space for the other team's player and event details.
 
 ---
 
-# 28. ABSOLUTE EVENT-SIDE RULE
+# 25. SCORELINE AND TEAM-NAME RULES
 
-The following mapping is mandatory:
+The scoreline is the primary information anchor.
 
-HOME TEAM → LEFT
+Show the score clearly and prominently.
 
-AWAY TEAM → RIGHT
+### Scoreline
 
-Every event must be assigned to the side of the team to which the player belongs.
+Display only:
 
-For example, structurally:
+`[HOME SCORE]–[AWAY SCORE]`
 
-`[HOME PLAYER EVENT] → LEFT`
+Do not add:
 
-`[AWAY PLAYER EVENT] → RIGHT`
+- `FT`
+- `Full Time`
+- `Final`
+- Season year
+- Matchday number
+- Match date
+- Venue
+- Other descriptive labels
 
-The renderer MUST NOT:
+### Team names
 
-* Determine event side from chronological order.
-* Alternate events between sides.
-* Split events evenly between columns.
-* Assume the first events belong to the home team.
-* Assume later events belong to the away team.
-* Infer team ownership from visual context.
-* Move an event to balance the design.
-* Move an event because another event appears visually crowded.
-* Use player reputation to determine side.
+Each team name must appear exactly once in the final image.
 
-Team identity is the sole authority for event-side placement.
+Place each team name directly beneath or beside its corresponding approved club crest, according to the composition.
 
----
+Do not repeat a team name:
 
-# 29. EVENT ORDER WITHIN EACH SIDE
+- Above the score
+- Beside the score
+- In a separate large headline
+- In an event-column heading
+- In a footer
+- In a second team label
 
-Each team's event list must remain chronological.
+Do not write team names again above the scorer/assister lines.
 
-Example structure:
+The approved match-event strings must contain player names only, not team names.
 
-### LEFT / HOME
-
-`[HOME EVENT 1]`
-
-`[HOME EVENT 2]`
-
-`[HOME EVENT 3]`
-
-### RIGHT / AWAY
-
-`[AWAY EVENT 1]`
-
-`[AWAY EVENT 2]`
-
-`[AWAY EVENT 3]`
-
-Do not reorder events within a team's side by:
-
-* Player
-* Reputation
-* Importance
-* Goal value
-* Assists
-* Player position
-
-Chronological order remains mandatory within each side.
+Use the scoreline, crests, and single team-name placements to communicate team identity.
 
 ---
 
-# 30. EVENT COMPLETENESS CHECK
+# 26. VISIBLE EVENT LAYOUT
+
+Display the approved match events in a compact, clean, easy-to-read area beneath the scoreline and team identity.
+
+Internally, keep separate home-team and away-team event lists.
+
+Visually, do not label these lists with `HOME`, `AWAY`, `LEFT`, or `RIGHT`.
+
+Use the layout to associate each event with the correct team without adding repeated team names.
+
+### Event presentation
+
+- Preserve the exact approved event string.
+- Keep each goal and its assister on the same line.
+- Keep the slash and all verified numerical statistics intact.
+- Do not create a separate assist line.
+- Do not add a separate assist icon.
+- Do not repeat a team name above the events.
+- Do not invent headings, labels, or explanations.
+- Preserve chronological order within each team's event list.
+- Ensure that each event is visually associated with its correct team.
+- Omit only the numerical bracket that is unavailable in the approved lock.
+
+If the scoreline or photo composition makes a side ambiguous, use the team crest and the single team-name placement to clarify the association. Do not add visible home/away labels.
+
+---
+
+# 27. EVENT-SIDE ASSIGNMENT RULE
+
+The renderer must use the approved internal team ownership for every event.
+
+It must not:
+
+- Infer ownership from chronological order.
+- Alternate events between teams.
+- Split events evenly to balance the design.
+- Assume earlier events belong to the home team.
+- Assume later events belong to the away team.
+- Infer ownership from the scoreline.
+- Move an event to balance the composition.
+- Move an event because another area is crowded.
+- Use player reputation to determine placement.
+
+The approved team assignment is the sole authority for visual placement.
+
+This is an internal rendering rule. The words `HOME`, `AWAY`, `LEFT`, and `RIGHT` must not appear as visible labels.
+
+---
+
+# 28. EVENT COMPLETENESS CHECK
 
 Before rendering, verify:
 
-### HOME / LEFT
+### Home-team events
 
-Every approved HOME-team event appears exactly once.
+Every approved home-team event appears exactly once and is associated with the correct team.
 
-### AWAY / RIGHT
+### Away-team events
 
-Every approved AWAY-team event appears exactly once.
+Every approved away-team event appears exactly once and is associated with the correct team.
 
-### GLOBAL
+### Global check
 
-Every approved match event appears exactly once across the two lists.
+Every approved match event appears exactly once.
 
-No event may:
+No event may be duplicated, omitted, invented, or assigned to the wrong team.
 
-* Appear twice
-* Be omitted
-* Appear on the wrong side
-* Be invented
-* Be reassigned
+For every goal with an official assist:
 
----
-
-# 31. APPROVED EVENT FORMATS
-
-Normal goal:
-
-`⚽ [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
-
-Penalty:
-
-`⚽ P [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
-
-Own goal:
-
-`⚽ OG [MINUTE] [INITIAL. SURNAME] ([GOAL TOTAL])`
-
-Assist:
-
-`👟 [MINUTE] [INITIAL. SURNAME] ([ASSIST TOTAL])`
-
-Red card:
-
-`🟥 [MINUTE] [INITIAL. SURNAME] ([RED CARD TOTAL])`
-
-Every event must be reproduced exactly.
-
-Do not recalculate any bracket number.
-
-Do not change punctuation.
-
-Do not replace numerical brackets with letter abbreviations.
+- Scorer appears first.
+- Scorer's verified goal total appears in the first bracket, if available.
+- A slash separates scorer and assister.
+- Assister appears after the slash.
+- Assister's verified assist total appears in the second bracket, if available.
+- Both players remain on the same line.
+- No separate assist icon or assist line is added.
+- Missing statistics are omitted exactly as approved in the lock.
 
 ---
 
-# 32. TOP BRANDING
+# 29. TOP BRANDING
 
 Top-left:
 
-Make in India / Indian tricolor branding
+Approved Make in India / Indian tricolor branding.
 
 Top-right:
 
-Official competition logo
+Official competition logo.
 
-Nothing else above the score.
+Use approved assets.
 
----
+Do not place a large competition headline at the top.
 
-# 33. FORBIDDEN VISIBLE INFORMATION
-
-Do not display:
-
-* Match date
-* Venue
-* Stadium
-* Large competition headline
-* MOTM text
-* MOTM badge
-* MOTM rating
-* MOTM tally
-* MOTM season count
-* Slogan
-* Footer text
-* Source citations
-* Research notes
-* Data block
-* Caption
-* Hashtags
-* Unapproved logos
-* Unapproved statistics
-* Internal workflow information
+Nothing else should compete with the scoreline.
 
 ---
 
-# 34. PANEL
+# 30. GLASSMORPHIC SCORE AND EVENT PANEL
 
-Score/event panel:
+Use a transparent or highly translucent glassmorphic panel with:
 
-Transparent / highly translucent / glassmorphic
+- Subtle blur
+- Fine borders
+- Controlled shadows
+- Premium contrast
+- Clean typography
+- Strong mobile readability
 
-Must include:
+The panel must not be:
 
-* Subtle blur
-* Fine borders
-* Controlled shadows
-* Premium contrast
-* Clean typography
-* Strong readability
+- Solid black
+- Fully opaque
+- A giant blank rectangle
+- Visually disconnected from the background
 
-Must NOT be:
+Both player photographs should remain visible around and, where appropriate, behind the translucent panel.
 
-* Solid black
-* Fully opaque
-* A giant blank rectangle
-* Visually disconnected from the photograph
-
-The hero photograph must remain visible around and behind the panel.
+Do not sacrifice event readability for visual effects.
 
 ---
 
-# 35. CANVAS
+# 31. CANVAS AND SPACING
 
 Width: `1080 px`
 
@@ -1277,13 +1192,17 @@ Height: `1350 px`
 
 Aspect ratio: `4:5`
 
+Use safe margins around all text and logos.
+
+Avoid placing essential content too close to the edges.
+
+Ensure the image is balanced and readable on a mobile screen.
+
 ---
 
-# 36. BOTTOM AREA
+# 32. BOTTOM AREA
 
-Bottom of image:
-
-NO TEXT
+The bottom of the image must contain no additional copy.
 
 No footer.
 
@@ -1297,511 +1216,440 @@ No date.
 
 No venue.
 
-No sources.
+No source notes.
 
-No additional logos.
+No repeated team names.
 
----
+No extra logos beyond the explicitly approved branding and crests.
 
-# 37. OFFICIAL LOGOS
-
-Use the approved official club and competition logos.
-
-Do not:
-
-* Redesign
-* AI-redraw
-* Distort
-* Replace
-* Unnecessarily recolor
-* Stylize
-
-official logos.
+The bottom may contain the approved background imagery and visual effects only.
 
 ---
 
-# 38. INFORMATION THAT MUST NEVER BE INVENTED
+# 33. OFFICIAL LOGOS AND CRESTS
+
+Use the approved official club crests and competition logo.
+
+Do not redesign, AI-redraw, distort, replace, unnecessarily recolour, or stylise official logos.
+
+Do not generate approximate substitute crests.
+
+Keep official logos proportionate and recognisable.
+
+If an approved official logo asset is unavailable, do not invent one.
+
+Use a verified official asset when available. Do not falsely represent an approximate or generated logo as an official crest.
+
+---
+
+# 34. INFORMATION THAT MUST NEVER BE INVENTED
 
 Never invent:
 
-* Score
-* Goal
-* Goal time
-* Scorer
-* Own goal
-* Penalty
-* Assist
-* Assist time
-* Red card
-* Red-card time
-* Cumulative statistic
-* Venue
-* Date
-* Competition
-* Club crest
-* Competition logo
-* Player photograph
-* MOTM
-* Team-side assignment
+- Score
+- Goal
+- Goal time
+- Scorer
+- Own goal
+- Penalty
+- Assist
+- Assist time
+- Red card
+- Red-card time
+- Cumulative statistic
+- Venue
+- Date
+- Competition
+- Club crest
+- Competition logo
+- Featured-player identity
+- Player photograph
+- Team-side assignment
 
-If information is missing, do not fabricate it.
+For featured-player selection, use the documented hierarchy in Section 19.
 
-### MOTM FALLBACK EXCEPTION
+If a fact cannot be verified, do not fabricate it.
 
-For MOTM specifically, do not interpret disagreement between credible secondary candidates as permission to invent a player.
+For pre-match statistics specifically, mark an unavailable statistic as unavailable and omit its numerical bracket. Do not treat that omission as a reason to block image generation.
 
-Instead, apply the deterministic MOTM hierarchy and fallback in Section 19.
-
-When credible candidates exist, select exactly one candidate according to those rules.
-
-The selected MOTM becomes verified system data once the `VERIFIED DATA BLOCK` is produced and approved.
-
-However, after the `RENDER DATA LOCK` is approved, the renderer must not decide that information is missing or modify the approved content.
+Once the VERIFIED RENDER DATA LOCK is approved, the renderer must not decide that a fact is missing or modify approved content.
 
 ---
 
-# 39. FINAL IMAGE EXCLUSIONS
+# 35. FINAL IMAGE EXCLUSIONS
 
-The final image must NOT contain:
+The final image must not contain:
 
-* MOTM name as a label
-* Player of the Match text
-* MOTM badge
-* MOTM rating
-* MOTM tally
-* MOTM season count
-* MOTM icon
-* Separate MOTM card
-* Match date
-* Venue
-* Stadium
-* Large competition headline
-* `Football Unites India`
-* Instagram caption
-* Hashtags
-* Source citations
-* Research notes
-* VERIFIED DATA BLOCK
-* RENDER DATA LOCK
-* Internal workflow information
-* Opaque information panel
-* `(P)`
-* `(A)`
-* `(R)`
+- `HOME`
+- `AWAY`
+- `LEFT`
+- `RIGHT`
+- `FT`
+- `Full Time`
+- `Final`
+- Season year beside the scoreline
+- Matchday number beside the scoreline
+- Match date
+- Venue
+- Stadium name
+- Large competition headline
+- Repeated team names
+- Team names in event headings
+- MOTM text
+- Player of the Match text
+- MOTM badge
+- MOTM rating
+- MOTM tally
+- MOTM season count
+- MOTM icon
+- Separate MOTM card
+- `Football Unites India`
+- Instagram caption
+- Hashtags
+- Source citations
+- Research notes
+- VERIFIED DATA BLOCK
+- VERIFIED RENDER DATA LOCK
+- Internal workflow information
+- Separate assist line for an already displayed goal
+- Separate `👟` assist icon
+- `Assisted by`
+- `(P)`
+- `(A)`
+- `(AST)`
+- `(R)`
+- `(RC)`
+- Opaque information panel
+- Unavailable-statistic placeholders such as `[N]`, `?`, or `N/A`
 
-The final image IS allowed to show the approved MOTM player as the hero photograph.
+The image must feature both approved standout players as background photographs.
 
 ---
 
-# 40. INSTAGRAM CAPTION — SEPARATE OUTPUT
+# 36. INSTAGRAM CAPTION — SEPARATE OUTPUT
 
-The supplied `instagram_caption` is NOT part of the image.
+The supplied `instagram_caption` is not part of the image.
 
-It must never be rendered inside the graphic.
+Never render it inside the graphic.
 
 After successful image generation, output the supplied caption separately.
 
-Use the supplied caption exactly as provided, except:
+Preserve the caption exactly as provided, including:
 
-* Normalize line breaks if necessary.
-* Normalize repeated whitespace if necessary.
-* Keep it as one easy-to-copy line.
+- Words
+- Emojis
+- Hashtags
+- Date and time
+- Punctuation
+- Intended line breaks
 
-Do not:
+Do not rewrite the caption, add or remove hashtags, add promotional text, or mix it with the graphic's factual data.
 
-* Rewrite the caption
-* Add hashtags
-* Remove hashtags
-* Add emojis
-* Remove emojis
-* Add promotional text
-* Mix it with the data block
-* Put it inside the image
+Keep the caption outside the image and easy to copy.
 
-The caption is a separate publishing artifact.
+Do not change the caption simply because match dates, team names, or other details are intentionally excluded from the image.
+
+If image generation fails, never claim that an image was generated. Provide an accurate explanation of the failure and preserve the supplied caption separately when appropriate.
 
 ---
 
-# 41. FINAL IMAGE CHECK
+# 37. FINAL IMAGE CHECKLIST
 
-Before rendering, verify the `RENDER DATA LOCK` is approved.
+Before rendering, confirm that the combined VERIFIED RENDER DATA LOCK has received the user's single explicit approval.
 
 Then verify visually:
 
-* Correct home team
-* Correct away team
-* Correct score
-* Correct home crest
-* Correct away crest
-* Correct competition logo
-* Make in India branding top-left
-* Competition logo top-right
-* No unauthorized text above score
-* Date not visible
-* Venue not visible
-* Stadium not visible
-* Large competition headline absent
-* Bottom contains no text
-* Hero photograph is approved MOTM player
-* MOTM is not explicitly labelled
-* No MOTM badge
-* No MOTM rating
-* No MOTM tally
-* No MOTM season count
-* Every approved HOME event appears on the LEFT
-* Every approved AWAY event appears on the RIGHT
-* No HOME event appears on the RIGHT
-* No AWAY event appears on the LEFT
-* Every approved goal included
-* Every approved assist included
-* Every approved red card included
-* Every approved own goal marked `⚽ OG`
-* Own goals do not increase individual goal totals
-* Penalties marked `⚽ P`
-* No unapproved events added
-* Player names use `[INITIAL. SURNAME]`
-* Normal goals use `⚽`
-* Penalty goals use `⚽ P`
-* Own goals use `⚽ OG`
-* Assists use `👟`
-* Red cards use `🟥`
-* No `Assisted by`
-* No `(P)`
-* No `(A)`
-* No `(R)`
-* Every numerical bracket exactly matches the approved `RENDER DATA LOCK`
-* No football-data calculation was performed during rendering
-* Current-season same-competition scope has already been verified
-* Glassmorphic/translucent panel
-* Hero photograph remains visible
-* Typography is legible
-* Safe margins are respected
-* Canvas is exactly 1080 × 1350
-* Caption is absent from image
+### Match identity
+
+- Correct approved scoreline.
+- Correct home-team crest.
+- Correct away-team crest.
+- Correct competition logo.
+- Each team name appears exactly once.
+- No repeated team names.
+- No `HOME`, `AWAY`, `LEFT`, or `RIGHT` labels.
+- No `FT`, `Full Time`, or `Final` label.
+- No season year or matchday number beside the scoreline.
+- No date or venue.
+
+### Featured players
+
+- Two distinct approved player photographs are present.
+- One photograph represents the home team.
+- One photograph represents the away team.
+- Both players are correctly identified.
+- The winning team's featured player is slightly larger.
+- For a draw, both photographs have approximately equal prominence.
+- Neither player is explicitly labelled MOTM.
+- No MOTM badge, rating, tally, or season count is present.
+
+### Events
+
+- Every approved event is included exactly once.
+- Every event is associated with the correct team.
+- Home and away ownership has not been inferred or changed.
+- Every approved goal is included.
+- Every officially credited assist is shown on its corresponding goal line.
+- Scorer and assister are separated by `/`.
+- The scorer and assister remain on one line.
+- No separate assist line is present.
+- No separate assist icon is present.
+- No `Assisted by` text is present.
+- Every approved red card is included.
+- Own goals are marked `⚽ OG`.
+- Own goals do not increase individual goal totals.
+- Penalties are marked `⚽ P`.
+- No unapproved event has been added.
+- Names, accents, punctuation, and all available numerical brackets exactly match the lock.
+- Missing-statistic brackets are omitted exactly as specified in the lock.
+
+### Design
+
+- Glassmorphic or translucent panel.
+- Both player photographs remain visible.
+- Scoreline is prominent.
+- Team names appear only once each.
+- Event text is legible on mobile.
+- Official logos are not distorted.
+- Safe margins are respected.
+- Canvas is exactly 1080 × 1350 px.
+- Bottom area contains no additional text.
+- Caption is absent from the image.
+
+Missing pre-match statistics are not a checklist failure when they have been marked unavailable and their brackets have been omitted.
 
 ---
 
-# 42. CRITICAL BRACKET VERIFICATION
+# 38. CRITICAL BRACKET VERIFICATION
 
-Before rendering, perform a visual-only consistency check against the `RENDER DATA LOCK`.
+Before rendering, perform a visual consistency check against the approved VERIFIED RENDER DATA LOCK.
 
-For each event:
+Do not recalculate any number.
 
-Do not recalculate the number.
+For each goal:
 
-Instead verify:
+- Compare the rendered scorer's goal total with the approved lock, if present.
+- If an assist is included, compare the assister's assist total with the approved lock, if present.
+- Confirm that the slash, player order, punctuation, and brackets match exactly.
+- Confirm that any unavailable statistic has no numerical bracket.
 
-Rendered event = approved locked event
+The rendered event must be identical to the approved event string.
 
-The renderer must reproduce the exact approved numerical value.
+Never replace a numerical bracket with a letter abbreviation.
 
-Example:
+Never modify a number to make it appear more plausible.
 
-Approved:
-
-`⚽ [MINUTE] [PLAYER A] ([NUMBER])`
-
-Rendered:
-
-`⚽ [MINUTE] [PLAYER A] ([NUMBER])`
-
-The number must be identical.
-
-Never replace:
-
-`([NUMBER])`
-
-with:
-
-`(P)`
-
-`(A)`
-
-`(R)`
-
-or any other abbreviation.
+Never insert an unverified number into a missing bracket.
 
 ---
 
-# 43. CRITICAL TEAM-SIDE VERIFICATION
+# 39. CRITICAL TEAM-OWNERSHIP VERIFICATION
 
-Before finalizing the image, perform a visual-only side check.
+For each rendered event:
 
-For every rendered event:
+1. Identify the event's approved team ownership.
+2. Confirm it is associated visually with the correct team.
+3. Confirm the event has not been moved to the other team's area.
+4. Confirm the layout does not imply incorrect ownership.
 
-### Check 1
+Use only the explicit assignments in the approved VERIFIED RENDER DATA LOCK.
 
-Identify the player's team from the approved lock.
-
-### Check 2
-
-Confirm the player's event is on the corresponding side.
-
-### Check 3
-
-Confirm:
-
-`HOME → LEFT`
-
-`AWAY → RIGHT`
-
-### Check 4
-
-Confirm no event has crossed the center boundary into the opposing team's event area.
-
-Do not recalculate or reinterpret team ownership.
-
-Use only the explicit team-side assignments in the approved `RENDER DATA LOCK`.
+Do not print those internal assignments as visible labels.
 
 ---
 
-# 44. NO EXTERNAL DATA AFTER LOCK
+# 40. NO EXTERNAL DATA AFTER LOCK
 
-Once `RENDER DATA LOCK` is approved, external football information is forbidden.
+Once the VERIFIED RENDER DATA LOCK is approved, external football information is forbidden during rendering.
 
-Even if the renderer knows or sees:
-
-* A different score
-* A different scorer
-* A different assist
-* A different statistic
-* A different MOTM
-* A different crest
-* A different player photograph
-* A different event order
-* A different team assignment
-
-the approved lock remains authoritative.
+Even if the renderer knows or encounters a different score, scorer, assist, statistic, featured player, crest, photograph, event order, or team assignment, the approved lock remains authoritative.
 
 Do not substitute outside information.
 
+Do not add a statistic that was unavailable during research.
+
+Do not recalculate statistics during rendering.
+
 ---
 
-# 45. DATA CONTAMINATION PROTECTION
+# 41. DATA CONTAMINATION PROTECTION
 
-The following must NEVER override the approved `RENDER DATA LOCK`:
+The approved VERIFIED RENDER DATA LOCK must never be overridden by:
 
-* Model memory
-* Previous conversations
-* Previous matches
-* Previous images
-* Prompt examples
-* Football knowledge
-* Search results after lock
-* Visual assumptions
-* Pattern recognition
-* Famous-player associations
-* Expected match events
-* Typical statistics
-* Training-data knowledge
+- Model memory
+- Previous conversations
+- Previous matches
+- Previous images
+- Prompt examples
+- General football knowledge
+- Search results after approval
+- Visual assumptions
+- Pattern recognition
+- Famous-player associations
+- Expected match events
+- Typical statistics
+- Training-data knowledge
 
 The approved lock always wins.
 
 ---
 
-# 46. FAILURE CONDITIONS
+# 42. FAILURE CONDITIONS
 
 Do not render if:
 
-* Match is not officially complete
-* Score is not verified
-* Material factual source conflict remains unresolved
-* Required event information cannot be verified
-* Required cumulative statistics cannot be verified
-* No credible MOTM candidate can be established at all
-* MOTM photograph cannot be appropriately identified
-* VERIFIED DATA BLOCK has not been approved
-* RENDER DATA LOCK has not been approved
-* HOME/AWAY event-side ownership has not been explicitly established
+- The match is not officially complete.
+- The final score is not verified.
+- A material factual conflict remains unresolved.
+- Required match-event information cannot be verified.
+- The home-team featured player cannot be credibly established.
+- The away-team featured player cannot be credibly established.
+- The approved player photographs cannot be appropriately identified.
+- Internal event ownership has not been explicitly established.
+- The combined VERIFIED RENDER DATA LOCK has not been approved.
 
-### MOTM FAILURE CLARIFICATION
+**Do not treat an unavailable pre-match goal, assist, or red-card baseline as a failure condition.**
 
-Do NOT stop merely because:
+If the only unavailable information is a pre-match statistic:
 
-* Two secondary sources select different MOTM players
-* A statistical provider's highest-rated player differs from an editorial MOTM
-* A fan vote differs from an editorial selection
-* Multiple credible secondary sources have different MOTM opinions
-
-Instead, apply Section 19.
-
-If credible candidates exist, the deterministic fallback MUST select exactly one MOTM.
-
-Only treat MOTM as a failure condition when no credible candidate can be established at all, or when the required underlying match information is genuinely unavailable.
-
-In any genuine failure condition:
-
-STOP at the relevant stage.
+1. Mark it unavailable.
+2. Omit the affected numerical bracket.
+3. Preserve the verified event and player identity.
+4. Complete the VERIFIED RENDER DATA LOCK.
+5. Request the single approval.
+6. Generate the image immediately after approval.
 
 Do not guess.
 
----
+Do not fabricate information.
 
-# 47. MASTER APPROVAL SEQUENCE
+Do not create a second approval gate.
 
-## APPROVAL 1
-
-Present:
-
-VERIFIED DATA BLOCK
-
-Ask:
-
-Approve the verified football data?
-
-Wait for approval.
+For featured-player selection, do not stop merely because credible sources disagree about who performed best. Apply the hierarchy and deterministic fallback in Section 19.
 
 ---
 
-## APPROVAL 2
+# 43. SINGLE APPROVAL SEQUENCE
 
-After Approval 1, generate:
+## THE ONLY APPROVAL — VERIFIED RENDER DATA LOCK
 
-RENDER DATA LOCK
+Before requesting approval:
 
-The lock MUST contain:
+- Verify the completed match and final score.
+- Verify all match events and event ownership.
+- Calculate reliably available cumulative statistics.
+- Mark unavailable pre-match statistics explicitly.
+- Omit the corresponding unavailable numerical brackets from event strings.
+- Select one featured player from each team using documented evidence.
+- Identify the two approved player photographs.
+- Establish the official crest and competition-logo assets.
+- Prepare the complete VERIFIED RENDER DATA LOCK.
+- Include the exact event strings and the complete visual-rendering contract.
 
-* Match identity
-* Home/left team
-* Away/right team
-* Score
-* Hero player
-* Hero photograph
-* Separate HOME/LEFT event list
-* Separate AWAY/RIGHT event list
-* Exact event strings
-* Exact numerical brackets
-* Branding requirements
-* Forbidden visible information
-* Rendering restrictions
+Present the combined lock to the user.
 
-Ask:
+Ask the user to approve it.
 
-Approve this exact RENDER DATA LOCK for image generation?
+Wait for explicit approval.
 
-Wait for approval.
+Do not request approval of a separate VERIFIED DATA BLOCK.
 
----
+Do not request a second approval for the RENDER DATA LOCK.
 
 ## FINAL RENDER
 
-Only after Approval 2:
+Only after the combined lock is approved, generate the image.
 
-Generate the image.
+The image generator performs visual rendering only.
 
-The renderer receives the `RENDER DATA LOCK`.
-
-The renderer performs visual rendering only.
+After successful generation, provide the image and the supplied Instagram caption separately, unchanged.
 
 ---
 
-# 48. FINAL RESPONSE STRUCTURE
+# 44. MOST IMPORTANT DATA RULE
 
-After successful image generation, provide:
+EVERY NUMBER INSIDE AN EVENT BRACKET MUST BE THE EXACT VERIFIED CURRENT-SEASON, SAME-COMPETITION CUMULATIVE STATISTIC IMMEDIATELY AFTER THAT SPECIFIC EVENT, AS SUPPLIED IN THE APPROVED VERIFIED RENDER DATA LOCK.
 
-1. The generated football match graphic
-2. The supplied Instagram caption separately below it
+WHEN A GOAL HAS AN OFFICIALLY CREDITED ASSIST, DISPLAY THE SCORER AND ASSISTER ON THE SAME LINE, SEPARATED BY `/`, WITH EACH RELIABLY VERIFIED STATISTIC IN ITS RESPECTIVE NUMERICAL BRACKET.
 
-Do not expose:
+NEVER DISPLAY THAT ASSIST AS A SEPARATE LINE OR WITH A SEPARATE `👟` ICON.
 
-* Research notes
-* Source list unless explicitly requested
-* Internal calculations
-* VERIFIED DATA BLOCK
-* RENDER DATA LOCK
-* Internal workflow notes
-
-The caption must remain outside the image.
+IF A REQUIRED PRE-MATCH STATISTIC CANNOT BE RELIABLY VERIFIED, OMIT ONLY ITS BRACKET. NEVER INVENT A NUMBER. NEVER BLOCK IMAGE GENERATION SOLELY BECAUSE THAT STATISTIC IS UNAVAILABLE.
 
 ---
 
-# 49. CORE PRINCIPLE
+# 45. MOST IMPORTANT VISUAL RULE
 
-The complete system is:
+THE BACKGROUND MUST FEATURE TWO DISTINCT, APPROVED PLAYER PHOTOGRAPHS: ONE SELECTED STANDOUT FROM EACH TEAM.
 
-RESEARCH
-↓
-VERIFY
-↓
-CALCULATE
-↓
-VERIFIED DATA BLOCK
-↓
-USER APPROVAL
-↓
-RENDER DATA LOCK
-↓
-USER APPROVAL
-↓
-LOCKED VISUAL RENDER
-↓
+THE WINNING TEAM'S FEATURED PLAYER MUST HAVE A SLIGHTLY LARGER PHOTOGRAPH. IF THE MATCH IS DRAWN, BOTH PHOTOGRAPHS MUST HAVE APPROXIMATELY EQUAL PROMINENCE.
+
+THE SCORELINE MUST REMAIN THE PRIMARY INFORMATION ANCHOR.
+
+THE TEAM NAMES MUST APPEAR EXACTLY ONCE EACH, BENEATH OR BESIDE THEIR RESPECTIVE CRESTS.
+
+DO NOT DISPLAY `HOME`, `AWAY`, `LEFT`, OR `RIGHT` AS VISIBLE TEXT.
+
+DO NOT DISPLAY `FT`, `FULL TIME`, `FINAL`, THE SEASON YEAR, THE MATCHDAY NUMBER, THE MATCH DATE, OR THE VENUE IN THE IMAGE.
+
+DO NOT REPEAT TEAM NAMES IN THE EVENT AREA.
+
+---
+
+# 46. MOST IMPORTANT APPROVAL RULE
+
+THERE IS EXACTLY ONE USER-APPROVAL GATE.
+
+THE USER APPROVES THE COMPLETE VERIFIED RENDER DATA LOCK.
+
+AFTER APPROVAL, GENERATE THE IMAGE DIRECTLY.
+
+DO NOT REQUIRE A SEPARATE VERIFIED DATA BLOCK APPROVAL.
+
+DO NOT REQUEST A SECOND RENDER DATA LOCK APPROVAL.
+
+MISSING PRE-MATCH STATISTICS MUST NOT TRIGGER AN EXTRA APPROVAL OR BLOCK IMAGE GENERATION.
+
+---
+
+# 47. MOST IMPORTANT IMMUTABILITY RULE
+
+THE APPROVED VERIFIED RENDER DATA LOCK IS IMMUTABLE.
+
+THE RENDERER MUST REPRODUCE APPROVED FOOTBALL FACTS AND EVENT STRINGS EXACTLY.
+
+IT MUST NOT ADD, REMOVE, RECALCULATE, OR CHANGE FACTS AFTER APPROVAL.
+
+---
+
+# 48. MOST IMPORTANT RENDERER RULE
+
+THE IMAGE GENERATOR IS A VISUAL RENDERER, NOT A FOOTBALL-DATA SOURCE.
+
+IT MUST NOT RESEARCH, GUESS, CALCULATE, INFER, CORRECT, SUBSTITUTE, OR REASSIGN FOOTBALL FACTS AFTER THE VERIFIED RENDER DATA LOCK HAS BEEN APPROVED.
+
+THE FINAL IMAGE MUST CONTAIN ONLY THE APPROVED MATCH INFORMATION AND MUST FOLLOW ALL VISUAL RESTRICTIONS IN THIS PROMPT.
+
+THE COMPLETE WORKFLOW IS:
+
+RESEARCH  
+↓  
+VERIFY  
+↓  
+CALCULATE AVAILABLE STATISTICS  
+↓  
+VERIFIED RENDER DATA LOCK  
+↓  
+ONE USER APPROVAL  
+↓  
+LOCKED VISUAL RENDER  
+↓  
 CAPTION
 
-Never:
+NEVER BLOCK GENERATION SOLELY BECAUSE A PRE-MATCH STATISTIC IS UNAVAILABLE.
 
-RESEARCH + GENERATE + GUESS
+NEVER INVENT A MISSING STATISTIC.
 
-Never:
+NEVER RENDER BEFORE THE COMBINED LOCK IS APPROVED.
 
-RENDER + VERIFY + CORRECT
-
-Never:
-
-RENDER + RECALCULATE
-
-Never:
-
-RENDER + REASSIGN EVENTS
-
-The purpose of this system is to prevent football-data contamination from:
-
-* Previous matches
-* Previous prompts
-* Previous images
-* Model memory
-* General football knowledge
-* Visual assumptions
-* Image-generation behavior
-* Unapproved external information
-
-The final graphic must contain only the approved information from the current `RENDER DATA LOCK`.
-
-The hero photograph must feature the selected and verified MOTM player.
-
-The MOTM must never be explicitly labelled.
-
-The score/event panel must remain translucent/glassmorphic.
-
-The Instagram caption must remain completely separate from the image.
-
-### MOST IMPORTANT DATA RULE
-
-EVERY NUMBER INSIDE AN EVENT BRACKET MUST BE THE EXACT VERIFIED CURRENT-SEASON, SAME-COMPETITION CUMULATIVE STATISTIC IMMEDIATELY AFTER THAT SPECIFIC EVENT, AS SUPPLIED IN THE APPROVED RENDER DATA LOCK.
-
-### MOST IMPORTANT LAYOUT RULE
-
-EVERY HOME-TEAM EVENT MUST APPEAR ON THE LEFT/HOME SIDE.
-
-EVERY AWAY-TEAM EVENT MUST APPEAR ON THE RIGHT/AWAY SIDE.
-
-THE RENDERER MUST NEVER INFER EVENT-SIDE PLACEMENT FROM CHRONOLOGICAL ORDER.
-
-### MOST IMPORTANT MOTM RULE
-
-THE SYSTEM MUST SELECT EXACTLY ONE MOTM WHEN A CREDIBLE MOTM CANDIDATE EXISTS.
-
-IF MULTIPLE CREDIBLE MOTM CANDIDATES REMAIN AFTER SOURCE REVIEW, A VERIFIED GOAL SCORER AMONG THOSE CANDIDATES TAKES PRIORITY.
-
-IF NO CREDIBLE CANDIDATE IS A GOAL SCORER, SELECT ONE CREDIBLE CANDIDATE USING THE STRONGEST AVAILABLE DOCUMENTED EVIDENCE.
-
-DIFFERING SECONDARY MOTM OPINIONS DO NOT AUTOMATICALLY CONSTITUTE A MATERIAL SOURCE CONFLICT.
-
-NEVER TERMINATE WITH “NO MOTM” MERELY BECAUSE SECONDARY SOURCES DISAGREE.
-
-### MOST IMPORTANT IMMUTABILITY RULE
-
-THE APPROVED RENDER DATA LOCK IS IMMUTABLE.
-
-### MOST IMPORTANT RENDERER RULE
-
-THE IMAGE GENERATOR IS A RENDERER, NOT A FOOTBALL-DATA SOURCE.
+NEVER MODIFY THE APPROVED LOCK DURING RENDERING.
