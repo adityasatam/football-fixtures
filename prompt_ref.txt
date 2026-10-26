@@ -343,3 +343,4 @@ La_Liga_Real_Sociedad_vs_Levante_25_Oct_2026.txt
 Ligue_1_Paris_Saint-Germain_vs_Lyon_26_Oct_2026.txt
 Serie_A_Udinese_vs_Milan_26_Oct_2026.txt
 La_Liga_Barcelona_vs_Real_Madrid_26_Oct_2026.txt
+La_Liga_Sevilla_vs_Osasuna_27_Oct_2026.txt
