@@ -131,14 +131,22 @@ def _instagram_caption(
     except ValueError:
         formatted_date = match_date
 
-    hashtags = [
-        _safe_hashtag(competition),
-        _safe_hashtag(home_team),
-        _safe_hashtag(away_team),
-        "#Football",
+    # Hardcoded list: include every tracked competition hashtag in EVERY caption.
+    # Keep this list aligned with the competitions configured by the project.
+    competition_hashtags = [
+        "#PremierLeague",
+        "#LaLiga",
+        "#ChampionsLeague",
     ]
 
-    hashtags = [tag for tag in hashtags if tag]
+    hashtags = [
+        *competition_hashtags,
+        _safe_hashtag(home_team),
+        _safe_hashtag(away_team)
+    ]
+
+    # Remove empty tags and duplicates while preserving order.
+    hashtags = list(dict.fromkeys(tag for tag in hashtags if tag))
 
     return (
         f"{home_team} vs {away_team}\n\n"
