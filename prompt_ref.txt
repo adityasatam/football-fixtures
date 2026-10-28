@@ -347,3 +347,6 @@ La_Liga_Sevilla_vs_Osasuna_27_Oct_2026.txt
 Serie_A_Sassuolo_vs_Lazio_27_Oct_2026.txt
 Serie_A_Roma_vs_Cagliari_28_Oct_2026.txt
 Serie_A_Torino_vs_Como_28_Oct_2026.txt
+Serie_A_Milan_vs_Bologna_28_Oct_2026.txt
+Serie_A_Parma_vs_Udinese_28_Oct_2026.txt
+Serie_A_Venezia_vs_Inter_28_Oct_2026.txt
