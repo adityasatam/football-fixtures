@@ -352,3 +352,4 @@ Serie_A_Parma_vs_Udinese_28_Oct_2026.txt
 Serie_A_Venezia_vs_Inter_28_Oct_2026.txt
 Serie_A_Genoa_vs_Juventus_29_Oct_2026.txt
 Serie_A_Monza_vs_Napoli_29_Oct_2026.txt
+Serie_A_Frosinone_vs_Lecce_29_Oct_2026.txt
