@@ -383,3 +383,4 @@ Ligue_1_Troyes_vs_Le_Mans_01_Nov_2026.txt
 Serie_A_Milan_vs_Inter_01_Nov_2026.txt
 La_Liga_Barcelona_vs_Deportivo_Alavs_01_Nov_2026.txt
 Premier_League_Aston_Villa_vs_Fulham_01_Nov_2026.txt
+Serie_A_Como_vs_Venezia_01_Nov_2026.txt
